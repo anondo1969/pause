@@ -24,6 +24,10 @@ Validated scales exist for AI dependence and AI literacy, but they are built for
 
 PAUSE (Patterns of AI Use: Self-Examination) is a free, no-login web tool that delivers a short self-check across the four domains where the research is concentrated. It does not diagnose you, rank you, or tell you to stop using AI. Think of it as a calibration check: a structured way to notice your current pattern.
 
+![PAUSE conceptual framework](media/figure1-theoretical-framework.png)
+
+*What PAUSE actually looks at, in one picture.*
+
 **Reasoning & Critical Thinking.** Do you verify claims you will rely on? Do you frame problems yourself before consulting AI, or does the tool arrive first?
 
 **Creativity & Originality.** Do you still generate ideas from a blank page? Does your finished work sound like you, or like a generic AI register?
@@ -34,13 +38,25 @@ PAUSE (Patterns of AI Use: Self-Examination) is a free, no-login web tool that d
 
 The items are behavioural rather than dispositional: "in the last two weeks, how often did you..." rather than "are you the kind of person who..." The scored LLM-era items are mapped to the studies that motivated them, and the full mapping is published in the accompanying paper. Many items are reverse-scored to counter the natural tendency to agree, and two short embedded probes, a claim-evaluation exercise and a 90-second alternative-uses task, add a small moment of genuine cognitive engagement beyond self-report.
 
+![Anatomy of a PAUSE item](media/item-b5-anatomy.png)
+
+*Every question shows its work: why it's asked, and where it comes from.*
+
 There is deliberately no overall score. A single "AI dependency number" would compress more than it reveals, because AI may help you on some tasks within a domain and hurt you on others. Instead you get four separate readings, each with reflections and suggested practices drawn from the same research: alternating AI-assisted and AI-free reading sessions, paraphrasing a source before opening a chatbot, keeping a private notebook for raw ideation, writing a first draft before inviting AI into the process. The goal is never abstinence. It is structure.
+
+![The result page: four readings, each with a practice to consider](media/offloading-pattern-demo.png)
+
+*What you get back: four readings, each with a small practice to try, and no single verdict (demo data).*
 
 ## Privacy as design principle
 
 There is one design decision I care about more than any other. An instrument that measures cognitive offloading should not itself offload.
 
 PAUSE is a static web application with no backend. No account, no login, no cookies beyond session progress. All scoring runs deterministically in your browser, in plain HTML, CSS, and JavaScript with no framework and no third-party scripts. No responses, scores, or free-text inputs are transmitted by the PAUSE application. They stay in the browser, and the session clears when you close the tab. If you want to compare results over time, the tool gives you a short opaque token that you copy and keep yourself. If you paste it back later, it is decoded locally in your browser. It is not sent to a server or linked to any account. And no LLM is involved in production.
+
+![The Compare view over six sessions](media/compare-demo.png)
+
+*Come back later and you can watch the whole pattern move: the trend, the per-domain change, and what it might mean (demo data).*
 
 This matters because self-reflection requires psychological safety. If you are going to be honest about where you might be leaning too heavily on a tool, you should not have to trade that honesty for data harvesting.
 

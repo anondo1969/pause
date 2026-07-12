@@ -48,11 +48,14 @@ Long-form documents (the essay, the paper, the privacy explainer) are Markdown f
 ├── LICENSE-CONTENT.md              CC-BY instrument, CC-BY-SA manuscript, OFL fonts
 ├── Dockerfile                      Optional self-hosting as a static nginx image
 │
-├── media/                          Images used by the README and the paper
+├── media/                          Images used by the README and the article/paper
 │   ├── figure1-theoretical-framework.png
 │   ├── item-b5-anatomy.png
 │   ├── compare-chart.png
-│   └── compare-deltas.png
+│   ├── compare-deltas.png
+│   ├── offloading-pattern-demo.png
+│   └── compare-demo.png
+│
 │
 ├── pages/                          All other page backbones
 │   ├── quiz.html                   The self-check
