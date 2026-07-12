@@ -185,7 +185,7 @@ There is no backend. The application transmits nothing, stores nothing server-si
 
 **Figure 3:** What you get back: four readings, each with a small practice to try, and no single verdict (demo data).
 
-![Figure 4](media/compare-pattern-demo.png)
+![Figure 4](media/compare-demo.png)
 
 **Figure 4:** The Compare view rendering the synthetic six-month demo trajectory, shown top to bottom as the respondent sees it. Everything in all these panels is computed in the browser from the pasted return tokens alone; no token is transmitted, stored, or linked to any identity.
 
@@ -205,8 +205,8 @@ There is no backend. The application transmits nothing, stores nothing server-si
       eprint={xxxx.xxxxx},
       archivePrefix={arXiv},
       primaryClass={cs.HC},
-      url={https://arxiv.org/abs/xxxx.xxxxx},
-	    doi={10.48550/arXiv.2407.10777},
+url={https://arxiv.org/abs/xxxx.xxxxx},
+doi={10.48550/arXiv.2407.10777},
 	    note={\href{https://doi.org/10.48550/arXiv.xxxx.xxxxx}{doi:10.48550/arXiv.xxxx.xxxxx}}
 }
 ```
