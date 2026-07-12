@@ -1,0 +1,911 @@
+{
+  "_meta": {
+    "version": "v0.1-alpha",
+    "n_objects": 12,
+    "object_categories": {
+      "bld": "Building / construction material",
+      "fst": "Fastener / small office item",
+      "wrn": "Wearable / personal item",
+      "shl": "Shelter / canopy",
+      "ctr": "Container / vessel",
+      "txt": "Textile / soft furnishing"
+    },
+    "note": "Categories tag the object type so the picker can avoid presenting the same object category on consecutive sessions. Two objects per category."
+  },
+  "objects": [
+    "brick",
+    "cinderblock",
+    "paperclip",
+    "rubber_band",
+    "shoe",
+    "belt",
+    "umbrella",
+    "tarpaulin",
+    "bucket",
+    "mason_jar",
+    "towel",
+    "blanket"
+  ],
+  "object_categories": {
+    "brick": "bld",
+    "cinderblock": "bld",
+    "paperclip": "fst",
+    "rubber_band": "fst",
+    "shoe": "wrn",
+    "belt": "wrn",
+    "umbrella": "shl",
+    "tarpaulin": "shl",
+    "bucket": "ctr",
+    "mason_jar": "ctr",
+    "towel": "txt",
+    "blanket": "txt"
+  },
+  "object_display": {
+    "brick": "a brick",
+    "cinderblock": "a cinderblock",
+    "paperclip": "a paperclip",
+    "rubber_band": "a rubber band",
+    "shoe": "a shoe",
+    "belt": "a leather belt",
+    "umbrella": "an umbrella",
+    "tarpaulin": "a tarpaulin (large waterproof sheet)",
+    "bucket": "a plastic bucket",
+    "mason_jar": "a mason jar",
+    "towel": "a bath towel",
+    "blanket": "a wool blanket"
+  },
+  "dictionaries": {
+    "brick": {
+      "weapon": [
+        "weapon",
+        "throw",
+        "smash",
+        "break",
+        "attack",
+        "hit"
+      ],
+      "building": [
+        "wall",
+        "build",
+        "house",
+        "construction",
+        "pillar",
+        "step",
+        "pathway",
+        "patio",
+        "fireplace"
+      ],
+      "weight": [
+        "paperweight",
+        "weight",
+        "doorstop",
+        "anchor",
+        "ballast",
+        "press"
+      ],
+      "tool": [
+        "hammer",
+        "press",
+        "tool",
+        "sharpen",
+        "knife sharpener"
+      ],
+      "art": [
+        "sculpt",
+        "carve",
+        "paint",
+        "art",
+        "decoration",
+        "ornament"
+      ],
+      "furniture": [
+        "bookend",
+        "shelf prop",
+        "stand",
+        "table leg",
+        "stool"
+      ],
+      "garden": [
+        "garden",
+        "planter base",
+        "edging",
+        "border",
+        "stepping stone"
+      ],
+      "heating": [
+        "heat",
+        "warm",
+        "oven brick",
+        "pizza stone",
+        "bed warmer"
+      ],
+      "exercise": [
+        "weight lifting",
+        "exercise",
+        "workout",
+        "strength training"
+      ]
+    },
+    "cinderblock": {
+      "building": [
+        "wall",
+        "build",
+        "foundation",
+        "construction",
+        "retaining"
+      ],
+      "weight": [
+        "weight",
+        "doorstop",
+        "anchor",
+        "ballast",
+        "hold down"
+      ],
+      "furniture": [
+        "bookshelf",
+        "shelf",
+        "desk leg",
+        "bench",
+        "stool",
+        "table leg",
+        "raised bed"
+      ],
+      "garden": [
+        "planter",
+        "raised bed",
+        "garden border",
+        "edging"
+      ],
+      "exercise": [
+        "step up",
+        "exercise",
+        "workout",
+        "kettlebell substitute",
+        "weight lifting"
+      ],
+      "barrier": [
+        "barricade",
+        "barrier",
+        "wheel chock",
+        "parking stop",
+        "block"
+      ],
+      "art": [
+        "sculpt",
+        "paint",
+        "art",
+        "decoration",
+        "ornament"
+      ],
+      "music": [
+        "drum",
+        "percussion",
+        "strike"
+      ],
+      "fire": [
+        "fire pit",
+        "grill base",
+        "stove"
+      ],
+      "shelter": [
+        "shelter base",
+        "tent anchor",
+        "weight down tarp"
+      ]
+    },
+    "paperclip": {
+      "tool": [
+        "pick lock",
+        "lock pick",
+        "screwdriver",
+        "tool",
+        "open sim",
+        "sim eject",
+        "pin",
+        "needle"
+      ],
+      "jewelry": [
+        "earring",
+        "necklace",
+        "bracelet",
+        "ring",
+        "pendant",
+        "jewelry",
+        "jewellery"
+      ],
+      "clip": [
+        "clip",
+        "fasten",
+        "hold paper",
+        "bind",
+        "paper holder"
+      ],
+      "art": [
+        "sculpture",
+        "chain",
+        "art",
+        "decoration",
+        "ornament"
+      ],
+      "fishing": [
+        "fish hook",
+        "hook",
+        "lure",
+        "bait"
+      ],
+      "repair": [
+        "zipper pull",
+        "fix",
+        "repair",
+        "replace screw"
+      ],
+      "office": [
+        "bookmark",
+        "marker",
+        "tab",
+        "label"
+      ],
+      "puzzle": [
+        "fidget",
+        "puzzle",
+        "stress toy"
+      ],
+      "wire": [
+        "antenna",
+        "wire",
+        "circuit",
+        "conductor"
+      ],
+      "scratch": [
+        "scratch",
+        "stylus",
+        "pointer",
+        "tablet stylus"
+      ]
+    },
+    "rubber_band": {
+      "fasten": [
+        "bundle",
+        "tie",
+        "fasten",
+        "secure",
+        "wrap",
+        "hold together",
+        "keep closed"
+      ],
+      "launch": [
+        "slingshot",
+        "launch",
+        "shoot",
+        "ping",
+        "catapult",
+        "projectile"
+      ],
+      "wear": [
+        "bracelet",
+        "hair tie",
+        "ponytail",
+        "wrist",
+        "headband"
+      ],
+      "grip": [
+        "grip",
+        "jar opener",
+        "open jar",
+        "non slip",
+        "traction"
+      ],
+      "fidget": [
+        "fidget",
+        "stress toy",
+        "snap",
+        "stretch"
+      ],
+      "office": [
+        "bookmark",
+        "page marker",
+        "tab"
+      ],
+      "music": [
+        "string",
+        "instrument",
+        "twang",
+        "guitar"
+      ],
+      "art": [
+        "loom",
+        "weave",
+        "art project",
+        "sculpture",
+        "geoboard"
+      ],
+      "exercise": [
+        "resistance",
+        "stretch band",
+        "exercise",
+        "physical therapy"
+      ],
+      "marking": [
+        "marker",
+        "indicator",
+        "tag",
+        "label"
+      ]
+    },
+    "shoe": {
+      "transport": [
+        "walk",
+        "run",
+        "transport",
+        "travel",
+        "move"
+      ],
+      "protection": [
+        "protect feet",
+        "armour",
+        "shield",
+        "guard",
+        "safety"
+      ],
+      "weapon": [
+        "throw",
+        "hit",
+        "weapon",
+        "attack"
+      ],
+      "container": [
+        "hold",
+        "carry",
+        "store",
+        "container",
+        "vessel"
+      ],
+      "tool": [
+        "hammer",
+        "doorstop",
+        "wedge",
+        "tool"
+      ],
+      "decoration": [
+        "display",
+        "art",
+        "decoration",
+        "ornament",
+        "vase"
+      ],
+      "planter": [
+        "plant",
+        "flower pot",
+        "garden",
+        "planter"
+      ],
+      "hand_puppet": [
+        "puppet",
+        "toy",
+        "play",
+        "doll"
+      ],
+      "music": [
+        "drum",
+        "shaker",
+        "rattle",
+        "instrument"
+      ],
+      "weight": [
+        "weight",
+        "anchor",
+        "paperweight",
+        "press"
+      ]
+    },
+    "belt": {
+      "fasten": [
+        "hold up",
+        "fasten",
+        "tie",
+        "secure",
+        "strap",
+        "cinch"
+      ],
+      "weapon": [
+        "whip",
+        "lash",
+        "strike",
+        "weapon",
+        "snap"
+      ],
+      "tool": [
+        "strop",
+        "sharpen razor",
+        "tool",
+        "leather strop"
+      ],
+      "carry": [
+        "sling",
+        "strap",
+        "harness",
+        "carrying",
+        "shoulder"
+      ],
+      "restraint": [
+        "restraint",
+        "tie up",
+        "bind",
+        "leash",
+        "tether"
+      ],
+      "decoration": [
+        "art",
+        "decoration",
+        "wall hanging",
+        "ornament",
+        "frame"
+      ],
+      "exercise": [
+        "weight belt",
+        "support",
+        "lifting belt",
+        "exercise"
+      ],
+      "music": [
+        "drum strap",
+        "guitar strap",
+        "instrument strap"
+      ],
+      "first_aid": [
+        "tourniquet",
+        "first aid",
+        "splint",
+        "emergency"
+      ],
+      "loop": [
+        "loop",
+        "handle",
+        "grip extender",
+        "attachment point"
+      ]
+    },
+    "umbrella": {
+      "weather": [
+        "rain",
+        "shade",
+        "sun",
+        "snow",
+        "weather",
+        "shelter"
+      ],
+      "weapon": [
+        "weapon",
+        "sword",
+        "stick",
+        "hit",
+        "attack"
+      ],
+      "support": [
+        "walking stick",
+        "cane",
+        "lean",
+        "support",
+        "prop"
+      ],
+      "decoration": [
+        "display",
+        "art",
+        "decoration",
+        "ornament",
+        "centrepiece"
+      ],
+      "container": [
+        "catch",
+        "collect",
+        "vessel",
+        "bucket"
+      ],
+      "signal": [
+        "flag",
+        "signal",
+        "marker",
+        "flagpole",
+        "antenna"
+      ],
+      "art": [
+        "paint canvas",
+        "sculpture",
+        "art project"
+      ],
+      "costume": [
+        "costume",
+        "prop",
+        "theatre",
+        "stage prop",
+        "magician"
+      ],
+      "tent": [
+        "tent",
+        "shelter",
+        "small canopy",
+        "fort"
+      ],
+      "drying": [
+        "rack",
+        "drying rack",
+        "hang clothes",
+        "hanger"
+      ]
+    },
+    "tarpaulin": {
+      "shelter": [
+        "tent",
+        "shelter",
+        "canopy",
+        "lean-to",
+        "shade",
+        "rain cover",
+        "roof"
+      ],
+      "ground": [
+        "picnic",
+        "ground sheet",
+        "groundcloth",
+        "sit on",
+        "lay on"
+      ],
+      "cover": [
+        "cover",
+        "protect",
+        "wrap",
+        "tarp over",
+        "weatherproof"
+      ],
+      "transport": [
+        "drag",
+        "sled",
+        "carry leaves",
+        "carry debris",
+        "move",
+        "sledge"
+      ],
+      "water": [
+        "catch water",
+        "rain catcher",
+        "pool liner",
+        "wading pool",
+        "trough"
+      ],
+      "decoration": [
+        "banner",
+        "backdrop",
+        "stage",
+        "screen",
+        "art canvas"
+      ],
+      "play": [
+        "parachute game",
+        "play",
+        "fort",
+        "den",
+        "hideout"
+      ],
+      "weapon": [
+        "smother",
+        "trap",
+        "ensnare",
+        "net"
+      ],
+      "compost": [
+        "compost cover",
+        "mulch",
+        "soil heat",
+        "warm soil"
+      ],
+      "wrap": [
+        "wrap furniture",
+        "moving",
+        "storage",
+        "protect from dust"
+      ]
+    },
+    "bucket": {
+      "container": [
+        "carry water",
+        "hold water",
+        "container",
+        "vessel",
+        "store"
+      ],
+      "seat": [
+        "stool",
+        "sit",
+        "seat",
+        "perch",
+        "step stool"
+      ],
+      "music": [
+        "drum",
+        "percussion",
+        "beat",
+        "instrument",
+        "busking"
+      ],
+      "weapon": [
+        "throw",
+        "hit",
+        "weapon",
+        "trap"
+      ],
+      "shelter": [
+        "helmet",
+        "head cover",
+        "hat",
+        "shield head"
+      ],
+      "planter": [
+        "plant",
+        "grow",
+        "garden",
+        "planter",
+        "flower pot"
+      ],
+      "game": [
+        "target",
+        "ring toss",
+        "basket",
+        "game",
+        "throw into"
+      ],
+      "scoop": [
+        "scoop",
+        "shovel",
+        "move sand",
+        "move dirt"
+      ],
+      "lampshade": [
+        "lampshade",
+        "light cover",
+        "diffuser"
+      ],
+      "tool": [
+        "hammer base",
+        "anvil base",
+        "stable base",
+        "stand"
+      ]
+    },
+    "mason_jar": {
+      "container": [
+        "store food",
+        "preserve",
+        "jam",
+        "pickle",
+        "container",
+        "vessel"
+      ],
+      "drink": [
+        "cup",
+        "glass",
+        "drink from",
+        "mug",
+        "tumbler"
+      ],
+      "candle": [
+        "candle",
+        "lantern",
+        "light",
+        "votive",
+        "lamp"
+      ],
+      "vase": [
+        "vase",
+        "flowers",
+        "centrepiece",
+        "display"
+      ],
+      "weight": [
+        "paperweight",
+        "weight",
+        "doorstop",
+        "anchor"
+      ],
+      "weapon": [
+        "throw",
+        "smash",
+        "weapon"
+      ],
+      "music": [
+        "instrument",
+        "fill with water",
+        "play",
+        "blow across",
+        "ocarina"
+      ],
+      "tool": [
+        "measure",
+        "measuring cup",
+        "mixing",
+        "tool"
+      ],
+      "art": [
+        "paint",
+        "decorate",
+        "snow globe",
+        "terrarium",
+        "diorama"
+      ],
+      "magnify": [
+        "magnify",
+        "lens",
+        "fill with water lens",
+        "fishbowl"
+      ]
+    },
+    "towel": {
+      "dry": [
+        "dry off",
+        "dry hands",
+        "dry dishes",
+        "absorb",
+        "soak up"
+      ],
+      "warmth": [
+        "wrap up",
+        "warmth",
+        "blanket",
+        "cover",
+        "cold"
+      ],
+      "clean": [
+        "clean",
+        "wipe",
+        "polish",
+        "scrub",
+        "mop up"
+      ],
+      "weapon": [
+        "whip",
+        "snap",
+        "flick",
+        "weapon",
+        "rat tail"
+      ],
+      "carry": [
+        "sling",
+        "carry hot things",
+        "potholder",
+        "oven mitt",
+        "bundle"
+      ],
+      "shelter": [
+        "sunshade",
+        "shade",
+        "cover head",
+        "wrap around"
+      ],
+      "play": [
+        "cape",
+        "costume",
+        "play dress up",
+        "fort"
+      ],
+      "padding": [
+        "cushion",
+        "padding",
+        "pillow",
+        "kneeler",
+        "rest"
+      ],
+      "first_aid": [
+        "bandage",
+        "pressure",
+        "tourniquet",
+        "first aid",
+        "compress"
+      ],
+      "exercise": [
+        "yoga mat",
+        "stretch aid",
+        "grip extender",
+        "workout"
+      ]
+    },
+    "blanket": {
+      "warmth": [
+        "bed",
+        "warm",
+        "wrap up",
+        "cold",
+        "comforter",
+        "snuggle"
+      ],
+      "shelter": [
+        "fort",
+        "tent",
+        "canopy",
+        "den",
+        "shade",
+        "screen"
+      ],
+      "padding": [
+        "cushion",
+        "padding",
+        "pillow",
+        "kneel",
+        "mattress topper"
+      ],
+      "carry": [
+        "sling",
+        "stretcher",
+        "carry",
+        "bundle",
+        "knapsack"
+      ],
+      "play": [
+        "cape",
+        "costume",
+        "play",
+        "dress up"
+      ],
+      "decoration": [
+        "wall hanging",
+        "tapestry",
+        "throw",
+        "decor",
+        "art"
+      ],
+      "weapon": [
+        "smother",
+        "trap",
+        "net",
+        "weighted"
+      ],
+      "first_aid": [
+        "pressure",
+        "shock blanket",
+        "warmth for injured",
+        "stretcher"
+      ],
+      "barrier": [
+        "sound barrier",
+        "muffle",
+        "block draft",
+        "insulate",
+        "window cover"
+      ],
+      "picnic": [
+        "ground sheet",
+        "picnic",
+        "sit on",
+        "outdoor seating"
+      ]
+    }
+  },
+  "thresholds": {
+    "note": "Provisional ex ante thresholds (disjoint fluency ranges). Metadata only: the runtime uses the equivalent rules in scoring.js#scoreC7.",
+    "band_0": {
+      "fluency_min": 8,
+      "flexibility_min": 5,
+      "label": "Strong fluency and category diversity"
+    },
+    "band_1": {
+      "fluency_min": 5,
+      "fluency_max": 7,
+      "flexibility_min": 3,
+      "label": "Adequate fluency and diversity"
+    },
+    "band_2": {
+      "fluency_min": 3,
+      "fluency_max": 4,
+      "label": "Moderate fluency, limited diversity"
+    },
+    "band_3": {
+      "fluency_min": 1,
+      "fluency_max": 2,
+      "label": "Low fluency"
+    },
+    "band_4": {
+      "fluency_zero": true,
+      "or_all_near_duplicates": true,
+      "label": "Very low fluency or all near-duplicates",
+      "note": "Also fires when fluency >= 5 but flexibility is too low to qualify for band 0 (>=5) or band 1 (>=3); this is the 'all near-duplicates' case from the paper."
+    }
+  }
+}

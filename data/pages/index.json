@@ -1,0 +1,130 @@
+{
+  "titleSuffix": "A self-check for how AI is shaping your habits",
+  "description": "A short, citation-grounded self-reflection tool for how AI may be shaping your habits of thought. Free, anonymous, no login. It is a reflection tool and has not been validated. All scoring runs in your browser. No data is collected.",
+  "bodyClass": "page-index",
+  "blocks": [
+    {
+      "type": "hero",
+      "eyebrowHtml": "<em>PAUSE</em> &nbsp;&middot;&nbsp; Patterns of AI Use: Self-Examination",
+      "titleHtml": "A short check-in<br> with <em>your own</em> thinking.",
+      "tagline": "Stop. Reflect. See what you are offloading to AI.",
+      "ledeHtml": "You use AI tools every day. <strong>PAUSE</strong> is a free, anonymous, ten-minute self-check that helps you notice how those tools may be shaping how you reason, create, learn, and connect with people.",
+      "actions": [
+        {
+          "label": "Start the self-check",
+          "href": "pages/quiz.html",
+          "style": "primary"
+        },
+        {
+          "label": "What is this?",
+          "href": "#what-it-is",
+          "style": "ghost"
+        }
+      ],
+      "metaHtml": "<strong>10&ndash;12 min</strong> &nbsp;&middot;&nbsp; no account &nbsp;&middot;&nbsp; no upload &nbsp;&middot;&nbsp; nothing leaves your browser"
+    },
+    {
+      "type": "section",
+      "id": "what-it-is",
+      "heading": "What this is, in plain words",
+      "body": [
+        {
+          "p": "Researchers have started measuring how heavy AI use changes the people who use it. The picture is not alarming, and PAUSE is not here to tell you to stop using AI. It is not nothing either. People who lean heavily on AI tools tend to verify less, generate fewer of their own first ideas, remember less of what they \"read\", and have fewer face-to-face conversations."
+        },
+        {
+          "p": "Offloading thinking is not bad in itself. We have always leaned on notes, calculators, maps, and search engines, usually for good reason. PAUSE does not assume that AI use is harmful. It focuses on the narrower case where AI quietly takes over effort you may want to keep. That means the verifying, the first ideas, the reading, and the conversations."
+        },
+        {
+          "p": "Most of us notice this in ourselves only when we stop to look. PAUSE is a way to stop and look. It asks you a short set of questions about your habits in the last two weeks, plus two small thinking exercises. Then it gives you a result, with one bar per area and a concrete practice you could try this week."
+        },
+        {
+          "callout": "<strong>A pause is not a verdict.</strong> A high reading does not mean you are using AI wrong. A low reading does not mean you are safe. Think of the reading as a mirror for your recent habits. It is not a measurement of you as a person."
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "heading": "The four areas it looks at",
+      "items": [
+        {
+          "num": "01",
+          "title": "Reasoning & Critical Thinking",
+          "text": "How often do you verify what an AI tells you, push back when it sounds plausible, and frame problems yourself before asking?"
+        },
+        {
+          "num": "02",
+          "title": "Creativity & Originality",
+          "text": "How much of your work starts from your own ideas before AI is involved? Does your finished work still sound like you?"
+        },
+        {
+          "num": "03",
+          "title": "Research & Learning",
+          "text": "When you learn something new, do you read the source or take the AI summary? Can you still hold a long argument together in your head?"
+        },
+        {
+          "num": "04",
+          "title": "Social & Communicative Capacity",
+          "text": "Are you having real conversations with people? Drafting your own personal messages? Or letting AI mediate the small social acts that build relationships?"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "What it gives back",
+      "body": [
+        {
+          "ul": {
+            "class": "give-back-list",
+            "items": [
+              "<strong>Four readings.</strong> One per area, on a 0 to 100 scale. We do not show a single overall \"how bad are you\" number. That question is not well-defined.",
+              "<strong>A concrete practice for each area.</strong> Each one is a specific small thing to try this week, chosen for the kind of work you do.",
+              "<strong>The receipts.</strong> Every question is grounded in a real research paper. You can expand the citation on any item, before or after answering, and read the exact sentence in the source that motivated the question.",
+              "<strong>A return token.</strong> A short code you can copy and save yourself, in a notes app or a password manager. Paste it in next month using the <a href=\"pages/compare.html\">Compare Pattern</a> page here and you will see how things have shifted. The token is decoded entirely in your browser. Nothing is sent anywhere."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "Privacy, in plain words",
+      "body": [
+        {
+          "p": "<strong>Nothing is saved on our side.</strong> Your answers stay in your browser. We do not store responses. We do not set tracking cookies. We do not run analytics. There is no login, and there is no backend to send anything to."
+        },
+        {
+          "callout": "If you took the self-check and left, we have no record you were ever here. That is by design."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "What this is <em>not</em>",
+      "body": [
+        {
+          "ul": {
+            "class": "not-list",
+            "items": [
+              "It is not a diagnosis. It does not measure intelligence, mental health, or impairment.",
+              "It is not a test you can pass or fail.",
+              "It is not for use in hiring, admissions, or evaluating anyone else.",
+              "It is not a substitute for talking to a therapist if you are worried about yourself.",
+              "It is a reflection tool. It has not been validated as a psychological instrument.",
+              "It collects no data, so there is nothing to participate in."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "heading": "Ready?",
+      "ledeHtml": "It takes about ten minutes. You can stop at any time. Your answers stay on your device.",
+      "action": {
+        "label": "Start the self-check →",
+        "href": "pages/quiz.html"
+      },
+      "fineHtml": "If you would rather read the design rationale first, see the <a href=\"pages/about.html\">PAUSE Explained</a> page or the <a href=\"pages/paper.html\">Academic Paper</a>."
+    }
+  ]
+}

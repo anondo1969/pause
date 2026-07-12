@@ -1,0 +1,7 @@
+{
+  "titleSuffix": "Academic Paper",
+  "bodyClass": "page-paper",
+  "mainClass": "paper-wrap",
+  "markdown": "data/content/paper.md",
+  "articleClass": "paper-content"
+}

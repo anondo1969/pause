@@ -1,0 +1,135 @@
+{
+  "titleSuffix": "self-check",
+  "bodyClass": "page-quiz",
+  "strings": {
+    "nav": {
+      "prev": "← Previous",
+      "next": "Next →",
+      "begin": "Begin →"
+    },
+    "stageLabels": {
+      "welcome": "Welcome",
+      "context": "About you",
+      "trajectory": "Trajectory · then vs now",
+      "result": "Your patterns"
+    },
+    "item": {
+      "labelPrefix": "Item ",
+      "reverseTag": "· reverse-scored",
+      "explanationSummary": "Why this question",
+      "referenceSummary": "Reference",
+      "notApplicable": "Not applicable"
+    },
+    "welcome": {
+      "sublabel": "Before you begin",
+      "titleHtml": "A short <em>self-check</em>.",
+      "disclaimerHtml": "<p><strong>This is a self-reflection tool, not a diagnostic instrument.</strong> It does not measure intelligence, mental health, or cognitive impairment. It surfaces patterns of self-reported behaviour that recent research literature associates with cognitive offloading to AI tools.</p><p>Results are descriptive, not prescriptive. If you have concerns about your cognitive or mental health, please consult a qualified professional, not this quiz.</p><p>PAUSE is a self-reflection tool, not a validated instrument. Results are for self-reflection only.</p>",
+      "ageLabel": "Age check",
+      "ageQuestion": "Are you 18 years of age or older?",
+      "ageYes": "Yes, I am 18 or older",
+      "ageNo": "No, I am under 18",
+      "under18Html": "<strong>Come back at 18</strong>PAUSE is not currently designed for use with people under 18. Thanks for stopping by."
+    },
+    "context": {
+      "sublabel": "Section A · context",
+      "titleHtml": "A few things <em>about you</em>.",
+      "intro": "These three answers branch your feedback. Your answers stay in your browser; nothing is sent anywhere."
+    },
+    "trajectory": {
+      "sublabel": "Section BL · trajectory",
+      "titleHtml": "Then versus <em>now</em>.",
+      "skipCalloutHtml": "<strong>You can skip this section.</strong> You reported using AI tools regularly for less than 12 months. For tenures this short, the \"before\" comparison rests on a shifting reference. Feel free to skip the five items below; you will still see your dimension scores.",
+      "skipButton": "Skip the trajectory block",
+      "skippedButton": "Skipped",
+      "baselineTag": " · baseline",
+      "baselineLegendFallback": "How much do you agree?",
+      "itemsLegend": "Compared to before AI tools"
+    },
+    "dimension": {
+      "sublabel": "Dimension {id} · Section {letter}",
+      "intro": "Behavioural items about the last two weeks. Answer how things actually are, not how they \"should\" be."
+    },
+    "b7": {
+      "qLabelSuffix": " · reasoning probe",
+      "taskLabel": "Claim evaluation",
+      "timerInitial": "00:45",
+      "seconds": 45,
+      "startButton": "Start 45-second timer",
+      "runningButton": "Running…",
+      "answeredButton": "Answered",
+      "timeUpButton": "Time up",
+      "hint": "No external tools.",
+      "skipButton": "Skip · not applicable",
+      "skippedButton": "Skipped · not applicable",
+      "timeUpNote": "Time ran out before you answered. This probe is counted as not applicable and dropped from the reading. It is not counted as a wrong answer."
+    },
+    "c7": {
+      "qLabelSuffix": " · creativity probe",
+      "taskLabel": "Alternative uses · object: ",
+      "timerInitial": "01:30",
+      "seconds": 90,
+      "promptHtml": "List as many <strong>genuinely different</strong> uses as you can for <strong>{object}</strong>. One per line. No external tools, no search.",
+      "placeholderIdle": "Press \"Start 90-second timer\" to begin.",
+      "placeholderRunning": "Type one use per line. The timer is running.",
+      "placeholderTimeUp": "Time up.",
+      "counter": "{n} lines",
+      "startButton": "Start 90-second timer",
+      "runningButton": "Running…",
+      "submittedButton": "Submitted",
+      "timeUpButton": "Time up",
+      "doneButton": "I'm done",
+      "hint": "One use per line.",
+      "skipButton": "Skip · not applicable",
+      "skippedButton": "Skipped · not applicable"
+    },
+    "result": {
+      "headerHtml": "Your AI <em>offloading patterns</em>.",
+      "bannerHtml": "<span class=\"pip\">●</span> A self-reflection tool · descriptive · not a measurement · not a diagnostic",
+      "limitedBasisBand": "Limited basis",
+      "limitedBasisTag": "too few applicable answers for a reading",
+      "naTag": "based on answered items · {n} marked N/A",
+      "c7ProvisionalTag": "C7 uses provisional thresholds (±1 band)",
+      "practiceHeading": "A practice to consider",
+      "rolePreamble": {
+        "researcher": "As a researcher, the areas that matter most for your work are likely <em>Reasoning & Critical Thinking</em> (verifying claims, catching hallucinations) and <em>Research & Learning</em> depth (reading sources, retaining what you learn). ",
+        "creative": "As a creative professional, the areas that matter most are likely <em>Creativity & Originality</em> (keeping your own voice, generating your own first ideas) and <em>Reasoning & Critical Thinking</em> (pushing back on AI suggestions that sound plausible but flatten your work). ",
+        "student": "As a student, all four areas intersect with your learning. The habits you build now with AI tools will shape how you think for years. <em>Research & Learning</em> is especially worth watching. The shortcut that skips the struggle also skips the retention. ",
+        "knowledge_worker": "In knowledge work, <em>Reasoning & Critical Thinking</em> (source-checking, independent problem framing) and <em>Social & Communicative Capacity</em> (drafting your own messages, maintaining relationships through your own voice) tend to be the areas where offloading accumulates fastest. ",
+        "software_engineer": "As an engineer, <em>Reasoning & Critical Thinking</em> (verifying AI-generated code and architecture decisions yourself) and <em>Creativity & Originality</em> (designing the structure before handing it to a copilot) are where offloading has the most direct impact on the quality of what you ship. ",
+        "other": ""
+      },
+      "summaryLabel": "Summary.",
+      "summaries": {
+        "minimal": "{role}Across all four areas, your self-reported habits suggest you are maintaining your own cognitive engagement alongside AI tools. The main risk at this level is complacency. Habits shift slowly, and the shift is easiest to miss when things feel fine. Consider retaking this in a month.",
+        "mild": "{role}Your scores suggest a moderate pattern of offloading across the four areas. This is common among regular AI users and does not mean anything is wrong. The practices suggested above are small and concrete, and they are designed for exactly this range. There is enough here to be worth noticing, and not so much that it should alarm you.",
+        "mildHighAppend": " Your strongest offloading signal is in {list}. The practices for {area} may be worth trying first.",
+        "moderate": "{role}Your scores suggest a strong pattern of offloading. Several of your habits in the last two weeks lean heavily on AI tools in ways the research literature links to measurable changes in the underlying capability. ",
+        "moderateHighAppend": "{list} {standOut} where the pattern is strongest. ",
+        "moderateTail": "The practices above are designed to be small enough to actually try this week. Pick just one to start with.",
+        "moderateLowAppend": " On the other hand, {list} {look} strong. That is worth noticing too.",
+        "strong": "{role}Your scores suggest a high level of offloading across most areas. This does not mean you are doing something wrong, and this tool is not a diagnostic. But the pattern is pronounced enough that a deliberate experiment could be genuinely revealing. Try one AI-free working session this week, in whichever area matters most to you. You do not need to stop using AI. The aim is simply to find out what your own capabilities feel like without it, right now, so you can make a conscious choice."
+      },
+      "words": {
+        "thatArea": "that area",
+        "thoseAreas": "those areas",
+        "standsOut": "stands out as the area",
+        "standOutPlural": "stand out as the areas",
+        "looks": "looks",
+        "look": "look"
+      },
+      "naNoteHtml": "<strong>About your N/A answers</strong>Readings use only the items you actually answered. Items you marked Not Applicable are left out of the count, so an area answered with fewer items rests on a smaller basis.",
+      "limitedNoteSingular": " <strong>Limited basis:</strong> {list} had too few applicable answers, so that area shows no number instead of a misleading one.",
+      "limitedNotePlural": " <strong>Limited basis:</strong> {list} had too few applicable answers, so those areas show no number instead of a misleading one.",
+      "trajectoryLabel": "Trajectory · then vs now",
+      "trajectoryNoteUnstable": "Your pre-AI baseline may not have been stable. So treat the trajectory direction as suggestive only.",
+      "trajectoryNoteNormal": "Trajectory is reported separately and is not folded into the dimension scores. Self-reported retrospective change is noisy. The direction is more reliable than the exact amount.",
+      "standingHtml": "<strong>About your scores.</strong> These reflect your self-reported habits in the last two weeks. They are not a measure of your underlying ability. The point of this tool is to make those habits visible, so you can choose differently if you want to. There is no \"good\" score. People who use AI thoughtfully and people who use AI very little can both have low offloading scores.",
+      "tokenLabel": "Return token · save this if you want to compare later",
+      "downloadButton": "↓ Download my data (JSON)",
+      "copyButton": "⧉ Copy return token",
+      "copyAlert": "Token copied. Paste it on the Compare page to visualise your scores over time.",
+      "compareLink": "↗ Compare with previous",
+      "homeLink": "← Back to home"
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "titleSuffix": "privacy",
+  "bodyClass": "page-privacy",
+  "mainClass": "content-page",
+  "header": {
+    "titleHtml": "Privacy, <em>in plain words</em>",
+    "ledeHtml": "PAUSE is built to keep your interactions to yourself. The defaults are more than restrictive. There is no data collection pathway at all. This page tells you exactly what does and does not happen."
+  },
+  "blocks": [
+    {
+      "type": "section",
+      "body": [
+        {
+          "callout": "Prefer the reasoning behind all this, in plain language? See <a href=\"pages/privacy-explained.html\"><strong>Privacy, explained</strong></a>."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "What this tool does",
+      "body": [
+        {
+          "p": "The tool performs the self-check and scoring <strong>entirely in your browser</strong>. Nothing is transmitted to any server while you take the self-check. Here is what that means in detail."
+        },
+        {
+          "ul": {
+            "items": [
+              "No account. No login. No email address.",
+              "No tracking cookies. No fingerprinting. No third-party scripts or requests: even the fonts are served from this site.",
+              "No application-level analytics of any kind. The PAUSE pages run no analytics scripts.",
+              "All scoring runs in your browser. Your answers stay on your device.",
+              "No data submission. There is no option to share, submit, or upload your answers anywhere."
+            ]
+          }
+        },
+        {
+          "p": "If you take the self-check and leave, there is no record on our side that you were ever here."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "Hosting",
+      "body": [
+        {
+          "p": "This site is served as static files on GitHub Pages. Like any web host, GitHub may keep standard server request logs (for example IP address and page path) under its own privacy policy. That is outside this project's control. The PAUSE pages themselves load no analytics, set no tracking cookies, and record nothing about what you answered."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "The return token",
+      "body": [
+        {
+          "p": "At the end of the self-check we offer a short opaque code (your \"return token\") that encodes your readings in a string. You copy that string and save it yourself, in a notes app or a password manager. If you come back later and paste it in on the <a href=\"pages/compare.html\">Compare</a> page, the comparison happens in your browser. The token does not go through any server, and we do not store any copy of it."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "Cookies and browser storage",
+      "body": [
+        {
+          "p": "PAUSE uses no tracking cookies. The only browser storage it may use is <em>session storage</em>, which is cleared automatically when you close the tab. It holds only two short rotation codes (which probe variant you saw last), so a repeat visit in the same tab does not show you the same reasoning paragraph or creativity object twice in a row. Your answers themselves are held in memory only while the page is open and are never written to storage. Nothing in session storage identifies you or leaves your browser."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "Minors",
+      "body": [
+        {
+          "p": "PAUSE is not designed for people under 18. We ask you to attest your age at the start of the self-check. We do not verify it. Verification would mean collecting identifying information, and that would defeat the purpose of the privacy design."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "GDPR",
+      "body": [
+        {
+          "p": "The PAUSE application does not process personal data within the meaning of the General Data Protection Regulation (GDPR), because your responses never leave your device. Standard request metadata handled by the host (GitHub Pages) is covered by the host's own privacy policy."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "Contact",
+      "body": [
+        {
+          "p": "For questions about this privacy notice, open an issue on the GitHub repository. See the <a href=\"pages/about.html\">PAUSE Explained</a> page."
+        }
+      ]
+    }
+  ]
+}

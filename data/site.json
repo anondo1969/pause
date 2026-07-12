@@ -1,0 +1,63 @@
+{
+  "meta": {
+    "titlePrefix": "PAUSE - Patterns of AI Use: Self-Examination",
+    "description": "A short, citation-grounded self-reflection tool for how AI tools may be shaping your habits of thought. Free, anonymous, no login. A reflection tool, not a validated instrument; all scoring runs in your browser; no data is collected."
+  },
+  "banner": {
+    "pip": "⏸",
+    "html": "<strong>PAUSE</strong> &nbsp;&middot;&nbsp; Patterns of AI Use: Self-Examination"
+  },
+  "disclaimerBanner": {
+    "html": "A self-reflection tool, not a validated instrument &nbsp;&middot;&nbsp; for reflection only, not for clinical, educational, or hiring decisions &nbsp;&middot;&nbsp; no data collected, runs entirely in your browser"
+  },
+  "nav": {
+    "brandHtml": "P<em>au</em>se",
+    "links": [
+      {
+        "label": "Home",
+        "href": "index.html"
+      },
+      {
+        "label": "Take the Self-Check",
+        "href": "pages/quiz.html"
+      },
+      {
+        "label": "PAUSE Explained",
+        "href": "pages/about.html"
+      },
+      {
+        "label": "Privacy by Design",
+        "href": "pages/privacy.html"
+      },
+      {
+        "label": "A Short Note",
+        "href": "pages/essay.html"
+      },
+      {
+        "label": "Academic Paper",
+        "href": "pages/paper.html"
+      },
+      {
+        "label": "Compare Pattern",
+        "href": "pages/compare.html"
+      }
+    ]
+  },
+  "footer": {
+    "noCollect": "This tool does not collect or transmit your responses. All scoring runs in your browser, and your answers are not saved beyond this session.",
+    "leftHtml": "<a href=\"https://github.com/anondo1969/pause/releases\" target=\"_blank\" rel=\"noopener\">PAUSE</a> &nbsp;&middot;&nbsp; <em>Patterns of AI Use: Self-Examination</em>",
+    "rightHtml": "cc-by 4.0 instrument &nbsp;&middot;&nbsp; mit code &nbsp;&middot;&nbsp; <a href=\"https://github.com/anondo1969/pause\" target=\"_blank\" rel=\"noopener\">github</a>",
+    "quiet": "A self-reflection tool. Not a diagnostic. · instrument v0.1-alpha",
+    "citation": {
+      "summary": "Cite this tool",
+      "textHtml": "Mahbub Ul Alam (Anondo) (2026). <em>PAUSE: A Privacy-Preserving Self-Reflection Tool for AI-Associated Cognitive Offloading.</em> arXiv:xxxx.xxxxx [cs.HC]. <a href=\"https://doi.org/10.48550/arXiv.xxxx.xxxxx\">doi:10.48550/arXiv.xxxx.xxxxx</a>",
+      "bibtexSummary": "BibTeX",
+      "bibtex": "@misc{alam2026pause,\n      title={PAUSE: A Privacy-Preserving Self-Reflection Tool for AI-Associated Cognitive Offloading},\n      author={Mahbub Ul Alam},\n      year={2026},\n      eprint={xxxx.xxxxx},\n      archivePrefix={arXiv},\n      primaryClass={cs.HC},\n      url={https://arxiv.org/abs/xxxx.xxxxx},\n      doi={10.48550/arXiv.xxxx.xxxxx},\n      note={\\href{https://doi.org/10.48550/arXiv.xxxx.xxxxx}{doi:10.48550/arXiv.xxxx.xxxxx}}\n}"
+    },
+    "contactHtml": "Contact: <a href=\"mailto:mahbub.ul.alam.anondo@gmail.com\">mahbub.ul.alam.anondo@gmail.com</a> &nbsp;&middot;&nbsp; <a href=\"https://www.linkedin.com/in/anondo/\" target=\"_blank\" rel=\"noopener\">LinkedIn Profile</a>"
+  },
+  "loadError": {
+    "title": "Could not load",
+    "bodyHtml": "<p>This page could not load its data files. If you opened it directly from disk, browsers block local file access for security. Serve the folder with a small web server (for example <code>python -m http.server</code>) and reopen it.</p>"
+  }
+}

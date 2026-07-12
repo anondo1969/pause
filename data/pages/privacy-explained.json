@@ -1,0 +1,7 @@
+{
+  "titleSuffix": "privacy, explained",
+  "bodyClass": "page-privacy",
+  "mainClass": "paper-wrap",
+  "markdown": "data/content/privacy-explained.md",
+  "articleClass": "paper-content"
+}

@@ -1,0 +1,103 @@
+{
+  "titleSuffix": "Compare your pattern",
+  "bodyClass": "page-compare",
+  "mainClass": "content-page compare-page",
+  "header": {
+    "eyebrow": "Compare",
+    "eyebrowClass": "compare-eyebrow",
+    "titleHtml": "See how things <em>have shifted</em>",
+    "ledeHtml": "Paste your return tokens below, one per line (up to 12). They are sorted by date automatically. Everything is decoded in your browser. Nothing leaves your device."
+  },
+  "strings": {
+    "privacyNote": {
+      "icon": "◆",
+      "text": "No tokens are sent to any server. Decoding is entirely client-side."
+    },
+    "form": {
+      "label": "Your tokens",
+      "placeholder": "Paste tokens here, one per line\neyJ2IjoidjAuMS1hbHBoYSIsInQiOjE5ODYx...",
+      "decodeButton": "Decode & compare",
+      "demoButton": "Load demo data"
+    },
+    "dims": [
+      {
+        "key": "D1",
+        "name": "Reasoning & Critical Thinking"
+      },
+      {
+        "key": "D2",
+        "name": "Creativity & Originality"
+      },
+      {
+        "key": "D3",
+        "name": "Research & Learning"
+      },
+      {
+        "key": "D4",
+        "name": "Social & Communicative Capacity"
+      }
+    ],
+    "bands": {
+      "minimal": "Minimal",
+      "mild": "Mild",
+      "moderate": "Moderate",
+      "strong": "Strong"
+    },
+    "bandSuffix": " offloading signal",
+    "months": [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+    ],
+    "chartAria": "Line chart showing PAUSE dimension scores over time",
+    "demoWatermark": "DEMO",
+    "errors": {
+      "empty": "Paste at least one return token above.",
+      "noneDecoded": "Could not decode any of the {n} token{s}. Check that you copied the full token string.",
+      "skipped": "{n} token{s} could not be decoded and {was} skipped.",
+      "truncated": "{n} token{s} beyond the limit of 12 {was} ignored.",
+      "mixedVersions": "Your tokens come from different scoring versions ({versions}). Readings across versions may not be directly comparable."
+    },
+    "analysis": {
+      "heading": "What the trajectory suggests",
+      "meta": "{n} session{s} · {span}",
+      "tags": {
+        "improving": "improving",
+        "attention": "needs attention",
+        "drifting": "drifting",
+        "stable": "stable"
+      },
+      "messages": {
+        "bigDrop": "<em>{dim}</em> dropped {abs} points, from {fromBand} to {toBand} offloading. Whatever you changed in this area appears to be working. Stay with it.",
+        "drop": "<em>{dim}</em> edged down by {abs} points. A modest but real shift. The trend line is headed in the right direction.",
+        "bigRise": "<em>{dim}</em> climbed {delta} points, from {fromBand} to {toBand} offloading. This is the area most worth pausing on. Consider revisiting the practice recommendation from your most recent result.",
+        "rise": "<em>{dim}</em> rose by {delta} points. Not alarming on its own, but worth watching next month.",
+        "stable": "<em>{dim}</em> held roughly steady ({signed}). No action needed, but the score itself ({band} offloading) is still worth being aware of."
+      },
+      "summaries": {
+        "positive": "Overall, the direction is positive. Most areas are trending toward less offloading. Keep the practices going, and check in again next month.",
+        "attention": "Overall, this is worth some attention. Multiple areas are trending toward more offloading. Read this as a signal worth noticing. It is not a verdict. Pick the one area that matters most to you and try one small change this week.",
+        "mixed": "Overall, this looks mixed or stable. Some areas shifted, others held. That is normal. Focus on the one dimension that matters most to the work you do."
+      }
+    },
+    "snapshot": {
+      "heading": "Snapshot from {date}",
+      "body": "This is a single session. Paste a second token to see how things have shifted over time."
+    },
+    "demo": {
+      "bannerPip": "◆",
+      "bannerHtml": "<strong>You are looking at demo data.</strong> These six sessions are synthetic and were generated to show what a six-month trajectory could look like. To see your own data, paste your real return tokens into the box above and click <em>Decode &amp; compare</em>.",
+      "footerLabel": "About this demo",
+      "footerHtml": "<p>The demo trajectory is deliberately non-linear. <em>Reasoning & Critical Thinking</em> declined steadily, <em>Creativity & Originality</em> stayed high before easing, <em>Research & Learning</em> fell the furthest, and <em>Social & Communicative Capacity</em> offloading rose throughout as a newly emerging issue, ending in a different band from where it started. Real trajectories rarely look like this exactly. The point is to show that the chart can pick up genuinely different patterns across the four dimensions, and not only parallel up-or-down drift.</p>"
+    }
+  }
+}

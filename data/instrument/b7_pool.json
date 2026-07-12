@@ -1,0 +1,774 @@
+{
+  "_meta": {
+    "version": "v0.1-alpha",
+    "n_items": 30,
+    "n_fallacy_types": 10,
+    "items_per_type": 3,
+    "fallacy_types": {
+      "ss": "Small sample size",
+      "sb": "Selection bias / unrepresentative sample",
+      "cf": "Confounding / correlation-causation",
+      "rm": "Regression to the mean",
+      "cb": "Confirmation bias / non-independent confirmation",
+      "es": "Effect size vs statistical significance",
+      "br": "Base rate neglect",
+      "sv": "Survivorship bias",
+      "an": "Anchoring / framing effect",
+      "ge": "Hasty generalisation / single-case extrapolation"
+    },
+    "note": "Each item presents a flawed empirical claim about AI productivity, learning, or use. Option (d) is always 'The conclusion seems sound to me' (uncritical acceptance). Option scoring is rubric-based in scoring.js#scoreB7."
+  },
+  "pool": [
+    {
+      "id": "ss-01",
+      "fallacy_type": "ss",
+      "paragraph": "A productivity blog reports the results of an internal experiment: \"Across our team of 8 employees, those who started using our new AI assistant wrote 40% more documents per week than those who did not. We conclude that AI assistants substantially improve productivity for knowledge workers.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "The sample size of 8 is too small to draw a generalisable productivity conclusion from a between-group comparison."
+        },
+        {
+          "key": "b",
+          "text": "Knowledge workers do not write documents."
+        },
+        {
+          "key": "c",
+          "text": "The blog is biased because it is internal."
+        },
+        {
+          "key": "d",
+          "text": "The conclusion seems sound to me."
+        }
+      ],
+      "correct": "a",
+      "explanation_after": "With only 8 employees split into two groups, a 40% difference could easily be chance alone. A study this small cannot support a general claim about knowledge workers."
+    },
+    {
+      "id": "ss-02",
+      "fallacy_type": "ss",
+      "paragraph": "A LinkedIn post claims: \"I surveyed 12 founders in my network. Eleven of them said AI coding tools have cut their development time in half. Founders who don't use AI tools are leaving free money on the table.\"",
+      "paragraph_v": 2,
+      "options": [
+        {
+          "key": "a",
+          "text": "Twelve founders, all from one person's network, is far too small and too narrow a sample to support a universal claim about founders. The numbers feel impressive only because they are reported as a fraction (11/12) rather than as the raw counts they are."
+        },
+        {
+          "key": "b",
+          "text": "Founders are unreliable narrators about their own development time."
+        },
+        {
+          "key": "c",
+          "text": "LinkedIn posts cannot be cited as evidence."
+        },
+        {
+          "key": "d",
+          "text": "The conclusion seems sound to me."
+        }
+      ],
+      "correct": "a",
+      "explanation_after": "Twelve self-selected people from one person's network do not represent founders in general. The 11-out-of-12 framing sounds strong but is statistically weak."
+    },
+    {
+      "id": "ss-03",
+      "fallacy_type": "ss",
+      "paragraph": "A research letter reports: \"In a pilot study of 14 medical residents, those who used an AI diagnostic aid for one week ordered 18% fewer unnecessary tests than those who did not. AI diagnostic aids reduce wasteful test ordering.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "Fourteen residents over one week is too small a sample, and too short a window, to support a general claim about wasteful test ordering. The percentage difference may not even reflect a real effect."
+        },
+        {
+          "key": "b",
+          "text": "Medical residents do not order tests; attendings do."
+        },
+        {
+          "key": "c",
+          "text": "Pilot studies are not published in research letters."
+        },
+        {
+          "key": "d",
+          "text": "The conclusion seems sound to me."
+        }
+      ],
+      "correct": "a",
+      "explanation_after": "Fourteen people over one week is only a feasibility test. It is too small to show a real effect. The headline 18% drop could sit entirely within the noise of such a sample."
+    },
+    {
+      "id": "sb-01",
+      "fallacy_type": "sb",
+      "paragraph": "A research team surveys 500 readers of a tech newsletter and asks how often they fact-check AI outputs. 82% report fact-checking 'always' or 'often'. The team concludes: \"Most knowledge workers are responsible AI users who routinely verify AI claims.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "82% is too low a percentage to support such a strong conclusion."
+        },
+        {
+          "key": "b",
+          "text": "The sample (tech newsletter readers) is not representative of knowledge workers in general; readers of a tech newsletter are more likely to be technically engaged than the average knowledge worker."
+        },
+        {
+          "key": "c",
+          "text": "Surveys are unreliable in principle."
+        },
+        {
+          "key": "d",
+          "text": "The conclusion seems sound to me."
+        }
+      ],
+      "correct": "b",
+      "explanation_after": "Tech newsletter readers are a self-selected group. Their fact-checking habits do not carry over to all knowledge workers, many of whom never read tech newsletters."
+    },
+    {
+      "id": "sb-02",
+      "fallacy_type": "sb",
+      "paragraph": "A university announces: \"We polled students who attended our recent AI-in-education workshop. 94% said AI tools had improved their study habits. We conclude that AI tools improve study habits across the student body.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "Students who attended a workshop about AI in education are not representative of the student body. The poll captures people already invested enough in the topic to show up; their experience cannot be generalised to students who did not attend."
+        },
+        {
+          "key": "b",
+          "text": "94% is suspiciously high and the data must be falsified."
+        },
+        {
+          "key": "c",
+          "text": "Universities should not survey their own students."
+        },
+        {
+          "key": "d",
+          "text": "The conclusion seems sound to me."
+        }
+      ],
+      "correct": "a",
+      "explanation_after": "The poll only sampled people who chose to attend a pro-AI workshop. Their answers describe themselves. They say little about students who skipped it."
+    },
+    {
+      "id": "sb-03",
+      "fallacy_type": "sb",
+      "paragraph": "A consultancy publishes a report: \"We interviewed 60 chief technology officers who responded to our outreach about AI adoption. 75% reported significant productivity gains from generative AI. CTOs across the industry are seeing significant gains.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "The 60 CTOs are not a random sample; they are the subset who chose to respond to the consultancy's outreach. CTOs whose AI adoption went badly, or who never tried it, are systematically less likely to engage with such outreach, biasing the report toward positive results."
+        },
+        {
+          "key": "b",
+          "text": "60 CTOs is too small a sample for any conclusion."
+        },
+        {
+          "key": "c",
+          "text": "Consultancies cannot conduct unbiased research."
+        },
+        {
+          "key": "d",
+          "text": "The conclusion seems sound to me."
+        }
+      ],
+      "correct": "a",
+      "explanation_after": "The problem is non-response bias. CTOs without good stories tend not to take the call. So the sample leans toward success cases, whatever the wider population looks like."
+    },
+    {
+      "id": "cf-01",
+      "fallacy_type": "cf",
+      "paragraph": "A 2025 observational study finds that teams who report heavy use of AI coding assistants also report higher annual revenue per engineer. The authors conclude: \"AI coding assistants cause significant revenue growth.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "Annual revenue is not a meaningful productivity metric."
+        },
+        {
+          "key": "b",
+          "text": "Coding assistants and revenue are measured in different units."
+        },
+        {
+          "key": "c",
+          "text": "Teams with higher revenue may already have had more resources, better engineers, or stronger products, any of which could independently drive both AI adoption and revenue. The observed association is consistent with confounding rather than causation."
+        },
+        {
+          "key": "d",
+          "text": "The conclusion seems sound to me."
+        }
+      ],
+      "correct": "c",
+      "explanation_after": "Observational data cannot tell apart A causing B, B causing A, and a third factor causing both. The study shows a correlation. The causal claim is not supported."
+    },
+    {
+      "id": "cf-02",
+      "fallacy_type": "cf",
+      "paragraph": "A wellness article reports: \"In a survey of 2,000 office workers, those who use AI writing tools daily report 23% lower stress scores than those who do not. AI tools are reducing workplace stress.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "Office workers who use AI tools daily may differ from non-users in many ways (job role, seniority, autonomy, type of work, baseline tech comfort). Any of these could independently affect both AI adoption and reported stress, so the comparison does not establish that AI use is what reduces stress."
+        },
+        {
+          "key": "b",
+          "text": "Stress is too subjective to measure in a survey."
+        },
+        {
+          "key": "c",
+          "text": "2,000 is too small a sample."
+        },
+        {
+          "key": "d",
+          "text": "The conclusion seems sound to me."
+        }
+      ],
+      "correct": "a",
+      "explanation_after": "Daily AI users are not a random slice of office workers. They probably sit in roles or situations that differ in systematic ways. The 23% gap could come from any of those differences instead of from AI use."
+    },
+    {
+      "id": "cf-03",
+      "fallacy_type": "cf",
+      "paragraph": "A university study reports: \"Undergraduates who self-report using AI tutoring tools weekly have GPAs 0.4 points higher than peers who do not. AI tutoring tools raise GPA.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "Students who actively seek out and use AI tutoring tools are likely to differ from non-users in motivation, study habits, and family resources. Any of these would independently predict higher GPA. The association does not show the tools themselves are raising GPA."
+        },
+        {
+          "key": "b",
+          "text": "GPA is a poor proxy for learning."
+        },
+        {
+          "key": "c",
+          "text": "0.4 GPA points is not meaningful."
+        },
+        {
+          "key": "d",
+          "text": "The conclusion seems sound to me."
+        }
+      ],
+      "correct": "a",
+      "explanation_after": "Choosing to use the tools is itself a sign of conscientiousness, resources, and engagement. The GPA gap fits several stories. The tools may help, the underlying student traits may help on their own, or both."
+    },
+    {
+      "id": "rm-01",
+      "fallacy_type": "rm",
+      "paragraph": "A school reports: \"We identified the 50 students with the lowest reading-comprehension scores at the start of the year, gave them an AI tutor, and re-tested at the end of the year. Average scores improved by 12 points. The AI tutor works.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "12 points is too small to be educationally meaningful."
+        },
+        {
+          "key": "b",
+          "text": "Reading comprehension scores cannot be averaged."
+        },
+        {
+          "key": "c",
+          "text": "Students with extreme low scores will tend to score closer to their typical level on a second test even without intervention, a phenomenon called regression to the mean. Without a control group of similarly-selected students who did not receive the AI tutor, the improvement cannot be attributed to the tutor."
+        },
+        {
+          "key": "d",
+          "text": "The conclusion seems sound to me."
+        }
+      ],
+      "correct": "c",
+      "explanation_after": "Picking people for an intervention because they scored at the extreme guarantees some apparent improvement at re-test, even if the intervention did nothing. You need a control group."
+    },
+    {
+      "id": "rm-02",
+      "fallacy_type": "rm",
+      "paragraph": "An HR analytics post claims: \"We identified the bottom 20% of our customer-service agents by call-quality score and assigned them an AI coaching tool. After three months, their average score rose by 15%. Our AI coaching tool works.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "Agents selected because they happened to score lowest in one month will tend to score closer to their long-run average on re-measurement, even with no intervention. Without a control group of similarly-selected agents who did not get the AI tool, the 15% gain cannot be attributed to the tool."
+        },
+        {
+          "key": "b",
+          "text": "Call-quality scores are too subjective to compare across months."
+        },
+        {
+          "key": "c",
+          "text": "15% is too small to matter operationally."
+        },
+        {
+          "key": "d",
+          "text": "The conclusion seems sound to me."
+        }
+      ],
+      "correct": "a",
+      "explanation_after": "This is the same regression-to-the-mean trap as the school example. Selecting the bottom 20% guarantees some apparent gain at re-measurement, whatever the intervention does."
+    },
+    {
+      "id": "rm-03",
+      "fallacy_type": "rm",
+      "paragraph": "A blog post reads: \"On my worst writing day of the month, I produced 400 words. I started using a new AI writing tool the next day and produced 950 words. The tool more than doubled my output.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "Choosing the worst day as the comparison point guarantees the next day will look better even with no intervention. The writer's typical daily output is not 400 words; that was an outlier in the bad direction. A fair comparison would use the writer's average."
+        },
+        {
+          "key": "b",
+          "text": "Word count is a poor proxy for writing quality."
+        },
+        {
+          "key": "c",
+          "text": "One person's experience cannot be generalised."
+        },
+        {
+          "key": "d",
+          "text": "The conclusion seems sound to me."
+        }
+      ],
+      "correct": "a",
+      "explanation_after": "Anchoring the comparison to a single bad day inflates the apparent improvement. This is regression to the mean dressed up as a productivity story."
+    },
+    {
+      "id": "cb-01",
+      "fallacy_type": "cb",
+      "paragraph": "A user writes: \"I asked the AI three follow-up questions to confirm its initial answer about the safety of a medication. The AI agreed each time, with additional sources. The convergence across four queries makes me very confident the original answer was correct.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "The AI is biased toward agreeing with the user's framing in follow-up questions; agreement across queries that were all phrased to seek confirmation does not constitute independent evidence."
+        },
+        {
+          "key": "b",
+          "text": "Three follow-up questions is too many."
+        },
+        {
+          "key": "c",
+          "text": "Medication safety cannot be assessed online."
+        },
+        {
+          "key": "d",
+          "text": "The conclusion seems sound to me."
+        }
+      ],
+      "correct": "a",
+      "explanation_after": "AI assistants tend to agree with how you framed the question. Repeated agreement across follow-ups just restates one stance. It is not independent confirmation. Sources it cites in follow-ups often follow the same framing."
+    },
+    {
+      "id": "cb-02",
+      "fallacy_type": "cb",
+      "paragraph": "A journalist writes: \"I had the AI summarise three articles I'd already read on this topic. All three summaries matched my prior understanding. This convinces me my understanding is correct.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "The journalist chose articles aligned with their prior view, then asked an AI inclined to agree with the user's framing to summarise them. The matching outcome was substantially predetermined by both choices and provides no independent test of the prior view."
+        },
+        {
+          "key": "b",
+          "text": "AI summaries are unreliable in general."
+        },
+        {
+          "key": "c",
+          "text": "Three articles is too few to summarise."
+        },
+        {
+          "key": "d",
+          "text": "The conclusion seems sound to me."
+        }
+      ],
+      "correct": "a",
+      "explanation_after": "If you pre-select sources that agree with you and run them through a system that tends to agree with your framing, the result was never in doubt. That is not real confirmation."
+    },
+    {
+      "id": "cb-03",
+      "fallacy_type": "cb",
+      "paragraph": "A startup CEO writes in their newsletter: \"I pitched my growth strategy to ChatGPT, Claude, and Gemini separately. All three agreed it was a strong plan. With three independent AIs validating it, I'm proceeding with full confidence.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "The three assistants are not independent in any meaningful sense. They were all asked to evaluate a strategy the user already endorsed, by a user using similar framing each time, and all three systems are trained to be agreeable to user-presented plans. Three agreements here are roughly as informative as one."
+        },
+        {
+          "key": "b",
+          "text": "AI assistants are unreliable for strategy questions."
+        },
+        {
+          "key": "c",
+          "text": "Three is too few to count as multiple sources."
+        },
+        {
+          "key": "d",
+          "text": "The conclusion seems sound to me."
+        }
+      ],
+      "correct": "a",
+      "explanation_after": "Different AI products are not independent evaluators when the same person asks each of them to judge a plan that person clearly favours. That is essentially one opinion in three voices."
+    },
+    {
+      "id": "es-01",
+      "fallacy_type": "es",
+      "paragraph": "A press release announces: \"Our new AI-powered learning platform produced a statistically significant improvement in student outcomes (p < 0.01) across 4,000 participants. Schools should adopt the platform.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "A p-value below 0.01 with 4,000 participants tells you the effect is unlikely to be exactly zero, but says nothing about the size of the effect. With a large sample, even trivial improvements (e.g. 0.5 percentile points) are statistically significant. The press release omits the effect size."
+        },
+        {
+          "key": "b",
+          "text": "p-values cannot be used in education research."
+        },
+        {
+          "key": "c",
+          "text": "Schools cannot adopt a platform based on a press release."
+        },
+        {
+          "key": "d",
+          "text": "The conclusion seems sound to me."
+        }
+      ],
+      "correct": "a",
+      "explanation_after": "Statistical significance and practical significance are not the same thing. With 4,000 participants, very small effects clear the p < 0.01 bar but may not matter for education. The press release should state the effect size."
+    },
+    {
+      "id": "es-02",
+      "fallacy_type": "es",
+      "paragraph": "A vendor's white paper says: \"In a randomised trial with 25,000 users, our AI productivity suite produced a highly significant improvement in task completion (p < 0.001) compared to a control. Enterprises should adopt the suite immediately.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "With 25,000 users, almost any non-zero difference becomes highly significant. The white paper presents the significance level without the effect size, so it is impossible to tell whether the improvement is large enough to matter operationally. The 'immediately' is doing rhetorical work the statistics do not support."
+        },
+        {
+          "key": "b",
+          "text": "Randomised trials cannot be run on AI productivity tools."
+        },
+        {
+          "key": "c",
+          "text": "p < 0.001 means the result is certainly true."
+        },
+        {
+          "key": "d",
+          "text": "The conclusion seems sound to me."
+        }
+      ],
+      "correct": "a",
+      "explanation_after": "Large samples make small effects significant. Without the effect size, you cannot judge the white paper's recommendation. 'Statistically significant' does not mean 'large enough to justify the cost'."
+    },
+    {
+      "id": "es-03",
+      "fallacy_type": "es",
+      "paragraph": "A research summary states: \"A large meta-analysis (N = 80,000 across 17 studies) finds a statistically significant positive effect of AI tutoring on test scores (p < 0.0001). The case for AI tutoring is now settled.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "An N of 80,000 makes even tiny effects highly significant. The summary reports the p-value but not the standardised effect size (e.g. Cohen's d or percentage-point gain). 'Settled' is unsupported until we know how large the average effect actually is, and how it varies across the 17 studies."
+        },
+        {
+          "key": "b",
+          "text": "Meta-analyses are unreliable in education research."
+        },
+        {
+          "key": "c",
+          "text": "17 studies is too few to pool."
+        },
+        {
+          "key": "d",
+          "text": "The conclusion seems sound to me."
+        }
+      ],
+      "correct": "a",
+      "explanation_after": "This is the same trap at a larger scale. The headline number is the p-value, which is almost guaranteed to be tiny at this sample size. What should drive any 'settled' claim is the effect size and how much it varies across studies."
+    },
+    {
+      "id": "br-01",
+      "fallacy_type": "br",
+      "paragraph": "A vendor markets a fraud-detection AI: \"In trials, our system flagged 92% of actual fraud cases. Banks should rely on it to stop fraud.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "The vendor reports only the true positive rate. They omit the false positive rate, and they omit the base rate of fraud. If fraud is rare (e.g. 0.1% of transactions), a 92% true positive rate with a 5% false positive rate means that the vast majority of flagged transactions will be false alarms. The claim cannot be evaluated from the numbers given."
+        },
+        {
+          "key": "b",
+          "text": "92% is too low for fraud detection."
+        },
+        {
+          "key": "c",
+          "text": "Banks should not use AI for fraud detection."
+        },
+        {
+          "key": "d",
+          "text": "The conclusion seems sound to me."
+        }
+      ],
+      "correct": "a",
+      "explanation_after": "When the underlying event is rare, the true positive rate alone is misleading. The real question is how many of all the flagged cases are actual fraud. Answering that needs the false positive rate and the base rate, and the vendor gives neither."
+    },
+    {
+      "id": "br-02",
+      "fallacy_type": "br",
+      "paragraph": "A medical-AI press release announces: \"Our diagnostic model correctly identifies 95% of patients with this rare cancer. The AI is ready for clinical use.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "If the cancer affects 1 in 10,000 people, a 95% true positive rate combined with even a 1% false positive rate means most positives produced by the model are still false. The release omits both the false positive rate and the base rate, without which the clinical usefulness cannot be judged."
+        },
+        {
+          "key": "b",
+          "text": "95% is too low for medical use."
+        },
+        {
+          "key": "c",
+          "text": "AI should not be used in cancer diagnosis."
+        },
+        {
+          "key": "d",
+          "text": "The conclusion seems sound to me."
+        }
+      ],
+      "correct": "a",
+      "explanation_after": "This is the classic base rate problem in medical AI. Without the false positive rate and the base rate, sensitivity figures on their own tell you almost nothing about how much to trust a positive result."
+    },
+    {
+      "id": "br-03",
+      "fallacy_type": "br",
+      "paragraph": "A security blog announces: \"Our new AI-based malware classifier achieves 99% accuracy on our test set of suspected files.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "If the test set was 99% benign files and 1% malware, a classifier that labels everything benign would also score 99% accuracy. Accuracy alone is uninformative without the base rate of malware in the test set and the breakdown of false positives and false negatives."
+        },
+        {
+          "key": "b",
+          "text": "99% is too low for malware detection."
+        },
+        {
+          "key": "c",
+          "text": "Test sets cannot be trusted for security."
+        },
+        {
+          "key": "d",
+          "text": "The conclusion seems sound to me."
+        }
+      ],
+      "correct": "a",
+      "explanation_after": "Accuracy is misleading when the classes are imbalanced. A trivial model can score very high accuracy just by always predicting the majority class. You need precision, recall, and the base rate."
+    },
+    {
+      "id": "sv-01",
+      "fallacy_type": "sv",
+      "paragraph": "A career article profiles five founders who used AI tools heavily and built unicorn companies. The article concludes: \"The data is clear: AI tools are the path to building unicorns. Founders who don't use them are leaving everything on the table.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "The article only profiles successful founders. It does not look at founders who used AI tools heavily and failed (a much larger group), nor at founders who built unicorns without heavy AI use. Drawing a conclusion from only the survivors over-counts the strategies of the winners."
+        },
+        {
+          "key": "b",
+          "text": "Five founders is too small a sample."
+        },
+        {
+          "key": "c",
+          "text": "Unicorns are not a meaningful business outcome."
+        },
+        {
+          "key": "d",
+          "text": "The conclusion seems sound to me."
+        }
+      ],
+      "correct": "a",
+      "explanation_after": "This is survivorship bias. It looks only at the winners and asks what they had in common. Many failed founders used the same tools, and many winners did not. The successful few are not the right comparison group."
+    },
+    {
+      "id": "sv-02",
+      "fallacy_type": "sv",
+      "paragraph": "A bestseller-list summary observes: \"Of the top 10 most-downloaded productivity AI tools this year, 8 were launched in the past 18 months. Recency is the strongest predictor of AI tool success.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "The summary looks only at tools that made the top 10. The much larger set of recent AI tools that failed to make the list is invisible to this analysis. The base rate of failure among recent tools may be similar or worse than among older tools; you cannot tell from the survivors alone."
+        },
+        {
+          "key": "b",
+          "text": "Download counts are unreliable."
+        },
+        {
+          "key": "c",
+          "text": "18 months is too short to measure success."
+        },
+        {
+          "key": "d",
+          "text": "The conclusion seems sound to me."
+        }
+      ],
+      "correct": "a",
+      "explanation_after": "The top 10 are the survivors of a much larger field. The analysis is missing the denominator, which is the total number of recent launches. You would need that to compare recent and older tools fairly."
+    },
+    {
+      "id": "sv-03",
+      "fallacy_type": "sv",
+      "paragraph": "An investor's memo reads: \"Looking at the 30 AI startups we funded in 2023, the 6 that survived to Series B all used the same project management methodology. We are now requiring all portfolio companies to use this methodology.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "The memo identifies a common factor only among the surviving 6. The other 24 startups, which presumably also used various methodologies including possibly the same one, are not analysed. Without knowing the methodology distribution among the failures, you cannot tell whether the methodology predicts survival or is just common."
+        },
+        {
+          "key": "b",
+          "text": "Project management methodology is irrelevant to startup survival."
+        },
+        {
+          "key": "c",
+          "text": "30 startups is too small a sample for any conclusion."
+        },
+        {
+          "key": "d",
+          "text": "The conclusion seems sound to me."
+        }
+      ],
+      "correct": "a",
+      "explanation_after": "Spotting patterns only among survivors is a survivorship bias trap. You also need to check the failures. If 20 of the 24 failed startups used the same methodology, the recommendation is empty."
+    },
+    {
+      "id": "an-01",
+      "fallacy_type": "an",
+      "paragraph": "A consulting report opens: \"Industry leaders estimate that AI will create $15 trillion in economic value by 2030. Even a 10% share of this market would justify our recommended $200M investment in AI infrastructure.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "The $15 trillion headline figure does the rhetorical work of making the $200M look small by comparison, but the figure itself is an industry-association estimate with no clear methodology. The recommendation rests on anchoring rather than on an independent business case for the $200M investment."
+        },
+        {
+          "key": "b",
+          "text": "Industry leaders cannot estimate future markets."
+        },
+        {
+          "key": "c",
+          "text": "$200M is a small investment for a company of any size."
+        },
+        {
+          "key": "d",
+          "text": "The conclusion seems sound to me."
+        }
+      ],
+      "correct": "a",
+      "explanation_after": "A giant but vague top-line number anchors you and makes the real decision look easy. What should drive the decision is a defensible expected return for the specific $200M. Its ratio to a speculative trillion-dollar figure is beside the point."
+    },
+    {
+      "id": "an-02",
+      "fallacy_type": "an",
+      "paragraph": "A sales deck claims: \"Replacing manual data entry with our AI tool saves the average enterprise 100,000 hours per year. At an industry-standard rate of $50/hour, that's $5M of value annually for our $400K subscription.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "The 100,000 hours figure is an average across an unspecified set of enterprises, and the $50/hour rate is presented as if neutral. The 12.5x value ratio is constructed from two anchors that are not justified for any specific customer. The deck encourages the reader to compare $400K to $5M rather than to evaluate whether the 100,000 hours and the rate apply to them."
+        },
+        {
+          "key": "b",
+          "text": "AI tools cannot save 100,000 hours per year."
+        },
+        {
+          "key": "c",
+          "text": "$400K is too expensive."
+        },
+        {
+          "key": "d",
+          "text": "The conclusion seems sound to me."
+        }
+      ],
+      "correct": "a",
+      "explanation_after": "Two soft anchors have been combined into one hard-looking ratio. What matters is the specific cost and benefit for the specific buyer. The size of the saving relative to the subscription is beside the point."
+    },
+    {
+      "id": "an-03",
+      "fallacy_type": "an",
+      "paragraph": "A negotiation primer claims: \"Studies show humans negotiating against AI counterparts settle at prices 12% closer to the AI's initial anchor than against human counterparts. AIs are more effective negotiators than humans.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "The 12% figure shows that humans are more susceptible to anchoring when negotiating against an AI, not that AIs negotiate better. A more aggressive opening anchor pulling counterparties closer is a known anchoring effect, not evidence of negotiation skill. 'More effective' is doing more work than the data supports."
+        },
+        {
+          "key": "b",
+          "text": "12% is too small a difference to matter."
+        },
+        {
+          "key": "c",
+          "text": "AIs cannot legally negotiate on behalf of companies."
+        },
+        {
+          "key": "d",
+          "text": "The conclusion seems sound to me."
+        }
+      ],
+      "correct": "a",
+      "explanation_after": "The mechanism here is simply anchoring. It is not a sign of negotiation skill. You would see the same effect for any negotiator, human or AI, that opens with a more aggressive anchor."
+    },
+    {
+      "id": "ge-01",
+      "fallacy_type": "ge",
+      "paragraph": "An opinion column reads: \"My nephew used AI to write his college application essay and got into his first-choice university. Anyone telling students not to use AI for college essays is gatekeeping their success.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "One nephew getting in is consistent with the AI essay helping, the essay being only one factor among many, or the student getting in despite the AI essay. A single anecdote cannot support a universal recommendation across all students and universities."
+        },
+        {
+          "key": "b",
+          "text": "AI cannot write college essays."
+        },
+        {
+          "key": "c",
+          "text": "First-choice university admissions are not a meaningful outcome."
+        },
+        {
+          "key": "d",
+          "text": "The conclusion seems sound to me."
+        }
+      ],
+      "correct": "a",
+      "explanation_after": "This is single-case extrapolation. One good outcome tells you nothing about the average effect, the spread, or the cases where AI essays hurt admissions. A universal recommendation needs more than one nephew."
+    },
+    {
+      "id": "ge-02",
+      "fallacy_type": "ge",
+      "paragraph": "A senior engineer writes on a forum: \"I tried the new AI coding assistant on one Friday afternoon. It hallucinated three function names and produced code that didn't compile. These tools are clearly not ready for professional use.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "One Friday afternoon, on one codebase, with one prompt style, is a single observation. It is consistent with the tool being not ready, the tool being ready but mismatched to this task, or the user being unfamiliar with how to use it. A universal claim about professional readiness needs broader evidence."
+        },
+        {
+          "key": "b",
+          "text": "AI coding assistants never hallucinate function names."
+        },
+        {
+          "key": "c",
+          "text": "Friday afternoons are not a fair test."
+        },
+        {
+          "key": "d",
+          "text": "The conclusion seems sound to me."
+        }
+      ],
+      "correct": "a",
+      "explanation_after": "This is the mirror image of the nephew case. One bad experience is just as weak a basis for a universal claim as one good one. The complaint may well be valid. The generalisation is not supported yet."
+    },
+    {
+      "id": "ge-03",
+      "fallacy_type": "ge",
+      "paragraph": "A LinkedIn post claims: \"I asked the AI to draft a marketing email and it did the job in 90 seconds. Marketing departments that take longer than 90 seconds to draft an email are wasting their headcount.\"",
+      "options": [
+        {
+          "key": "a",
+          "text": "Drafting one email in 90 seconds tells us that the AI can produce a passable first draft quickly. It does not address review cycles, brand alignment, legal review, multi-stakeholder approval, A/B testing, or the dozens of other things real marketing departments do around an email. The generalisation from one task to a department-level workflow is unsupported."
+        },
+        {
+          "key": "b",
+          "text": "AI cannot draft marketing emails in 90 seconds."
+        },
+        {
+          "key": "c",
+          "text": "Marketing departments do not draft emails."
+        },
+        {
+          "key": "d",
+          "text": "The conclusion seems sound to me."
+        }
+      ],
+      "correct": "a",
+      "explanation_after": "A single isolated task is being treated as a benchmark for an entire job. The 90 seconds is real. The jump to department headcount is single-case extrapolation."
+    }
+  ]
+}

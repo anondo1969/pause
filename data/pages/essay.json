@@ -1,0 +1,7 @@
+{
+  "titleSuffix": "A personal note",
+  "bodyClass": "page-essay",
+  "mainClass": "paper-wrap",
+  "markdown": "data/content/essay.md",
+  "articleClass": "paper-content"
+}

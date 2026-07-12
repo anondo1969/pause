@@ -1,0 +1,100 @@
+# ─────────────────────────────────────────────────────────────
+#  STRICT ALLOWLIST .gitignore
+#  Default: everything is ignored. Only paths explicitly
+#  un-ignored (!) below are tracked. Any file NOT listed here
+#  — including new or renamed files — will NOT be committed.
+#  If you add or rename a file, add its line here or Git won't see it.
+# ─────────────────────────────────────────────────────────────
+
+# 1) Ignore everything, at every depth
+*
+
+# 2) Re-open the directories in the tree so Git can descend into them.
+#    (Files inside stay ignored until individually allowlisted below.)
+!/pages/
+!/css/
+!/js/
+!/fonts/
+!/tests/
+!/data/
+!/data/pages/
+!/data/content/
+!/data/instrument/
+!/media/
+
+# 3) Allowlist the exact files that belong in the repo.
+
+# root
+!/.gitignore
+!/index.html
+!/favicon.svg
+!/README.md
+!/PAUSE-paper-Mahbub-Ul-Alam.pdf
+!/LICENSE
+!/LICENSE-CONTENT.md
+!/Dockerfile
+
+# pages/
+!/pages/quiz.html
+!/pages/compare.html
+!/pages/about.html
+!/pages/essay.html
+!/pages/paper.html
+!/pages/privacy.html
+!/pages/privacy-explained.html
+
+# css/
+!/css/style.css
+
+# js/
+!/js/app.js
+!/js/markdown.js
+!/js/scoring.js
+!/js/quiz.js
+!/js/compare.js
+
+# fonts/
+!/fonts/Fraunces-Roman-VF.woff2
+!/fonts/Fraunces-Italic-VF.woff2
+!/fonts/JetBrainsMono-*.woff2
+!/fonts/OFL-*.txt
+
+# tests/
+!/tests/audit.js
+!/tests/smoke.js
+!/tests/smoke_full_quiz.js
+!/tests/smoke_hash.js
+!/tests/README.md
+
+# data/ (root file)
+!/data/site.json
+
+# data/pages/
+!/data/pages/index.json
+!/data/pages/about.json
+!/data/pages/privacy.json
+!/data/pages/quiz.json
+!/data/pages/compare.json
+!/data/pages/essay.json
+!/data/pages/paper.json
+!/data/pages/privacy-explained.json
+
+# data/content/
+!/data/content/essay.md
+!/data/content/paper.md
+!/data/content/privacy-explained.md
+
+# data/instrument/
+!/data/instrument/items.json
+!/data/instrument/b7_pool.json
+!/data/instrument/c7_dictionaries.json
+!/data/instrument/feedback.json
+
+# media/  (README + paper images)
+#   Strict: exactly these four. If you rename/add a figure, add its line here.
+#   Prefer figures to "just work" without editing this file? Replace the four
+#   lines below with:  !/media/*.png   !/media/*.svg   !/media/*.pdf
+!/media/figure1-theoretical-framework.png
+!/media/item-b5-anatomy.png
+!/media/compare-chart.png
+!/media/compare-deltas.png

@@ -1,0 +1,682 @@
+{
+  "context": [
+    {
+      "id": "A1",
+      "type": "single",
+      "task": "Which best describes your primary work?",
+      "options": [
+        {
+          "value": "researcher",
+          "label": "Researcher or academic"
+        },
+        {
+          "value": "creative",
+          "label": "Creative professional (writer, designer, artist, etc.)"
+        },
+        {
+          "value": "student",
+          "label": "Student"
+        },
+        {
+          "value": "knowledge_worker",
+          "label": "Knowledge worker (analyst, manager, consultant, etc.)"
+        },
+        {
+          "value": "software_engineer",
+          "label": "Software or data engineer"
+        },
+        {
+          "value": "other",
+          "label": "Other"
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "type": "single",
+      "task": "On average, how many hours per week do you actively use AI tools (ChatGPT, Claude, Copilot, Gemini, etc.) for work or study?",
+      "options": [
+        {
+          "value": "<1",
+          "label": "Less than 1 hour"
+        },
+        {
+          "value": "1-5",
+          "label": "1 to 5 hours"
+        },
+        {
+          "value": "6-15",
+          "label": "6 to 15 hours"
+        },
+        {
+          "value": "16-30",
+          "label": "16 to 30 hours"
+        },
+        {
+          "value": ">30",
+          "label": "More than 30 hours"
+        }
+      ]
+    },
+    {
+      "id": "A3",
+      "type": "single",
+      "task": "How long have you been using these AI tools regularly?",
+      "options": [
+        {
+          "value": "<6m",
+          "label": "Less than 6 months"
+        },
+        {
+          "value": "6-12m",
+          "label": "6 to 12 months"
+        },
+        {
+          "value": "1-2y",
+          "label": "1 to 2 years"
+        },
+        {
+          "value": ">2y",
+          "label": "More than 2 years"
+        }
+      ]
+    }
+  ],
+  "trajectory": {
+    "intro": "These items compare your habits now with how they were before you regularly used AI tools. They are reported separately from the four dimension scores. Retrospective self-report is noisy, so please answer as honestly as you can about how things actually were.",
+    "bl0": {
+      "id": "BL0",
+      "type": "likert",
+      "task": "Before I started using AI tools regularly, my work and study habits in these four areas (verifying facts, generating ideas, reading sources, drafting messages) were already well-established and stable.",
+      "scale_legend": "How much do you agree?",
+      "scale": [
+        {
+          "value": 0,
+          "label": "Strongly disagree"
+        },
+        {
+          "value": 1,
+          "label": "Disagree"
+        },
+        {
+          "value": 2,
+          "label": "Neutral"
+        },
+        {
+          "value": 3,
+          "label": "Agree"
+        },
+        {
+          "value": 4,
+          "label": "Strongly agree"
+        }
+      ],
+      "explanation": "This item asks how settled your habits were before AI tools became part of your routine. A retrospective comparison is only as good as the baseline you are comparing against. If your habits were unstable to begin with, the four trajectory items below will be harder to interpret. We use this answer to add a small note to your result if your baseline was not stable.",
+      "reference": {
+        "quote": "“Predisposing variables contribute to a person’s core characteristics, which may be relatively stable over time. [...] [T]he predisposing variables act in concert with coping styles and Internet-related biases resulting in specific patterns of affective and cognitive responses in specific situations.” — Brand et al. (2016), pp. 254, 257.",
+        "citation": "Brand, M. et al. (2016). Integrating psychological and neurobiological considerations regarding the development and maintenance of specific Internet-use disorders: An Interaction of Person-Affect-Cognition-Execution (I-PACE) model. <i>Neuroscience &amp; Biobehavioral Reviews</i>, 71, 252-266. <a href=\"https://doi.org/10.1016/j.neubiorev.2016.08.033\" target=\"_blank\" rel=\"noopener\">doi:10.1016/j.neubiorev.2016.08.033</a>"
+      }
+    },
+    "skip_threshold_months": 12,
+    "items": [
+      {
+        "id": "BL1",
+        "type": "likert",
+        "task": "Compared to before you regularly used AI tools, how often do you now verify factual claims against independent sources?",
+        "scale": [
+          {
+            "value": -2,
+            "label": "Much less often"
+          },
+          {
+            "value": -1,
+            "label": "Somewhat less"
+          },
+          {
+            "value": 0,
+            "label": "About the same"
+          },
+          {
+            "value": 1,
+            "label": "Somewhat more"
+          },
+          {
+            "value": 2,
+            "label": "Much more"
+          }
+        ],
+        "explanation": "Verification habits are the clearest trace of how AI changes your reasoning routine. If you used to check sources and have mostly stopped, the trajectory is downward. If you check more now, because you have learned not to trust AI blindly, the trajectory is upward.",
+        "reference": {
+          "quote": "“The interviews also revealed that participants with higher educational attainment were more aware of the potential drawbacks of relying on AI tools. These individuals were more likely to cross-check information provided by AI and to engage in critical evaluation of AI-generated content.” — Gerlich (2025), p. 21.",
+          "citation": "Gerlich, M. (2025). AI tools in society: Impacts on cognitive offloading and the future of critical thinking. <i>Societies</i>, 15(1), 6. <a href=\"https://doi.org/10.3390/soc15010006\" target=\"_blank\" rel=\"noopener\">doi:10.3390/soc15010006</a>"
+        }
+      },
+      {
+        "id": "BL2",
+        "type": "likert",
+        "task": "Compared to before, how often do you now generate ideas from scratch without external input when starting creative work?",
+        "scale": [
+          {
+            "value": -2,
+            "label": "Much less often"
+          },
+          {
+            "value": -1,
+            "label": "Somewhat less"
+          },
+          {
+            "value": 0,
+            "label": "About the same"
+          },
+          {
+            "value": 1,
+            "label": "Somewhat more"
+          },
+          {
+            "value": 2,
+            "label": "Much more"
+          }
+        ],
+        "explanation": "Reaching for an AI tool before you generate your own ideas can anchor your work on the AI's first suggestion. This item asks whether your starting point has shifted.",
+        "reference": {
+          "quote": "“Interestingly, participants exposed to LLM-generated strategies during the exposure phase continued to generate more similar ideas in the test phase, even without LLM assistance, a phenomenon known as homogenization. This raises concerns that LLMs, which provide ubiquitous frameworks for thinking, could lead to reduced diversity in collective thinking, with people continuing to produce similar ideas even after they stop using the LLM.” — Kumar et al. (2025), p. 8.",
+          "citation": "Kumar, H. et al. (2025). Human Creativity in the Age of LLMs: Randomized Experiments on Divergent and Convergent Thinking. <i>Proceedings of CHI 2025</i>. <a href=\"https://doi.org/10.1145/3706598.3714198\" target=\"_blank\" rel=\"noopener\">doi:10.1145/3706598.3714198</a>"
+        }
+      },
+      {
+        "id": "BL3",
+        "type": "likert",
+        "task": "Compared to before, how often do you now read original sources end to end rather than relying on summaries?",
+        "scale": [
+          {
+            "value": -2,
+            "label": "Much less often"
+          },
+          {
+            "value": -1,
+            "label": "Somewhat less"
+          },
+          {
+            "value": 0,
+            "label": "About the same"
+          },
+          {
+            "value": 1,
+            "label": "Somewhat more"
+          },
+          {
+            "value": 2,
+            "label": "Much more"
+          }
+        ],
+        "explanation": "Reading the source yourself gives you a different kind of understanding than an AI summary does. Summaries are useful, and they are also compressed. The depth is in the original.",
+        "reference": {
+          "quote": "“As may be expected, reading an AI-generated summary instead of the full passage significantly worsened comprehension in higher performers, likely because much of the detail and nuance of the passage was lost in the summary. The AI-generated summary’s effect on lower performers was inconsistent.” — Etkin et al. (2025), p. 8.",
+          "citation": "Etkin, H. K. et al. (2025). Differential effects of GPT-based tools on comprehension of standardized passages. <i>Frontiers in Education</i>, 10. <a href=\"https://doi.org/10.3389/feduc.2025.1506752\" target=\"_blank\" rel=\"noopener\">doi:10.3389/feduc.2025.1506752</a>"
+        }
+      },
+      {
+        "id": "BL4",
+        "type": "likert",
+        "task": "Compared to before, how often do you now draft personal or sensitive messages entirely on your own?",
+        "scale": [
+          {
+            "value": -2,
+            "label": "Much less often"
+          },
+          {
+            "value": -1,
+            "label": "Somewhat less"
+          },
+          {
+            "value": 0,
+            "label": "About the same"
+          },
+          {
+            "value": 1,
+            "label": "Somewhat more"
+          },
+          {
+            "value": 2,
+            "label": "Much more"
+          }
+        ],
+        "explanation": "Drafting a sensitive message yourself, in your own words, is a small social act that adds up. A lot of little AI-drafted messages can change your voice over months.",
+        "reference": {
+          "quote": "“We find that people choose to use AI when given the opportunity, and this increases the speed of communication and leads to more emotionally positive language. However, we also find that when participants think that their partner is using more algorithmic responses, they perceive them as less cooperative, less affiliative and more dominant.” — Hohenstein et al. (2023), p. 4.",
+          "citation": "Hohenstein, J. et al. (2023). Artificial intelligence in communication impacts language and social relationships. <i>Scientific Reports</i>, 13, 5487. <a href=\"https://doi.org/10.1038/s41598-023-30938-9\" target=\"_blank\" rel=\"noopener\">doi:10.1038/s41598-023-30938-9</a>"
+        }
+      }
+    ]
+  },
+  "dimensions": [
+    {
+      "id": "D1",
+      "name": "Reasoning & Critical Thinking",
+      "section_letter": "B",
+      "section_legend": "In the last two weeks, how often?",
+      "scale": [
+        {
+          "value": 0,
+          "label": "Almost never"
+        },
+        {
+          "value": 1,
+          "label": "Rarely"
+        },
+        {
+          "value": 2,
+          "label": "Sometimes"
+        },
+        {
+          "value": 3,
+          "label": "Often"
+        },
+        {
+          "value": 4,
+          "label": "Almost always"
+        }
+      ],
+      "items": [
+        {
+          "id": "B1",
+          "type": "likert",
+          "reverse": true,
+          "task": "When an AI gives me a factual answer that I will rely on (a statistic, a date, a citation), I check it against an independent source before using it.",
+          "explanation": "This item looks at whether you still check facts as a matter of routine. The habit matters more here than the ability. This one is reverse-scored, because regular independent checking points to less offloading.",
+          "reference": {
+            "quote": "Lee et al. (2025, p. 8): “Verify information by cross-referencing external sources (114/319). More commonly, knowledge workers cross-referenced information in the GenAI output against reputable, external sources, to validate it.”<br>Tankelevitch et al. (2024, p. 8): “Thus, users must maintain a well-adjusted level of confidence in their own ability to evaluate this output and not blindly accept generated content.”",
+            "citation": "Lee, H.-P. et al. (2025). The Impact of Generative AI on Critical Thinking: Self-Reported Reductions in Cognitive Effort and Confidence Effects from a Survey of Knowledge Workers. <i>Proceedings of CHI 2025</i>. <a href=\"https://doi.org/10.1145/3706598.3713778\" target=\"_blank\" rel=\"noopener\">doi:10.1145/3706598.3713778</a><br>Tankelevitch, L. et al. (2024). The Metacognitive Demands and Opportunities of Generative AI. <i>Proceedings of CHI 2024</i>. <a href=\"https://doi.org/10.1145/3613904.3642902\" target=\"_blank\" rel=\"noopener\">doi:10.1145/3613904.3642902</a>"
+          }
+        },
+        {
+          "id": "B2",
+          "type": "likert",
+          "reverse": false,
+          "task": "When I face a complex problem, I now reach for an AI tool before I have spent meaningful time framing the problem myself.",
+          "explanation": "Forming the question is part of the reasoning. If you reach for an AI tool before you frame the problem yourself, you hand that part over. The version the AI gets is often a simpler question that it can answer easily.",
+          "reference": {
+            "quote": "Lee et al. (2025, p. 12): “We found that GenAI tools shift the effort of critical thinking in three distinct ways: ... for Application, effort shifts from problem-solving to AI response integration...”<br>Kosmyna et al. (2025, p. 122): “If AI essentially performs the high-level planning, the brain will allocate less resources to those functions, as seen in the moderated alpha/beta connectivity in Session 4.”",
+            "citation": "Lee, H.-P. et al. (2025). The Impact of Generative AI on Critical Thinking: Self-Reported Reductions in Cognitive Effort and Confidence Effects from a Survey of Knowledge Workers. <i>Proceedings of CHI 2025</i>. <a href=\"https://doi.org/10.1145/3706598.3713778\" target=\"_blank\" rel=\"noopener\">doi:10.1145/3706598.3713778</a><br>Kosmyna, N. et al. (2025). Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task. arXiv:2506.08872. <a href=\"https://arxiv.org/abs/2506.08872\" target=\"_blank\" rel=\"noopener\">arxiv.org/abs/2506.08872</a>"
+          }
+        },
+        {
+          "id": "B3",
+          "type": "likert",
+          "reverse": true,
+          "task": "When an AI's reasoning seems plausible, I push back on it and ask myself where it could be wrong.",
+          "explanation": "A plausible answer is not always a correct one. Pushing back on an AI's reasoning, even when it sounds right, keeps your own judgement in the loop. Without that habit, your judgement slowly gets replaced by the AI's. This one is reverse-scored.",
+          "reference": {
+            "quote": "“Provocations highlight risks, biases, limitations, and alternatives of GenAI suggestions.” — Drosos et al. (2025), p. 2.",
+            "citation": "Drosos, I. et al. (2025). \"It Makes You Think\": Provocations Help Restore Critical Thinking to AI-Assisted Knowledge Work. arXiv:2501.17247. <a href=\"https://arxiv.org/abs/2501.17247\" target=\"_blank\" rel=\"noopener\">arxiv.org/abs/2501.17247</a>"
+          }
+        },
+        {
+          "id": "B4",
+          "type": "likert",
+          "reverse": false,
+          "task": "I find it harder than I used to find it to hold a long argument together in my head without external help.",
+          "explanation": "Holding a multi-step argument in your head is a skill, and it needs regular practice. If you hand the synthesis to AI, you practise it less. Over time the capacity can fade.",
+          "reference": {
+            "quote": "Kosmyna et al. (2025, p. 126): “Participants who had AI assistance showed a somewhat reduced connectivity profile in the high-frequency bands when writing on their own, suggesting they might not be engaging in as much self-driven elaboration or critical scrutiny as their counterparts.”<br>Gerlich (2025, p. 24): “Participants who engaged in higher levels of cognitive offloading due to AI tool usage exhibited lower critical thinking skills, indicating that the reduction in cognitive load from AI tools adversely affects critical thinking development.”",
+            "citation": "Kosmyna, N. et al. (2025). Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task. arXiv:2506.08872. <a href=\"https://arxiv.org/abs/2506.08872\" target=\"_blank\" rel=\"noopener\">arxiv.org/abs/2506.08872</a><br>Gerlich, M. (2025). AI tools in society: Impacts on cognitive offloading and the future of critical thinking. <i>Societies</i>, 15(1), 6. <a href=\"https://doi.org/10.3390/soc15010006\" target=\"_blank\" rel=\"noopener\">doi:10.3390/soc15010006</a>"
+          }
+        },
+        {
+          "id": "B5",
+          "type": "likert",
+          "reverse": false,
+          "task": "I accept an AI-generated answer in domains where I cannot easily verify it.",
+          "explanation": "AI tools answer confidently even in areas where you have no way to check. If you accept those answers without flagging them as uncertain, you are on the most common path to repeating a hallucination.",
+          "reference": {
+            "quote": "“Indeed, by placing unwarranted reliance on AICs for information retrieval and problem solving, individuals may inadvertently bypass the essential cognitive processes contributing to critical thinking, analytical acumen, and the cultivation of creativity.” — Dergaa et al. (2024), pp. 4-5.",
+            "citation": "Dergaa, I. et al. (2024). From tools to threats: A reflection on the impact of artificial-intelligence chatbots on cognitive health. <i>Frontiers in Psychology</i>, 15. <a href=\"https://doi.org/10.3389/fpsyg.2024.1259845\" target=\"_blank\" rel=\"noopener\">doi:10.3389/fpsyg.2024.1259845</a>"
+          }
+        },
+        {
+          "id": "B6",
+          "type": "likert",
+          "reverse": true,
+          "task": "When I disagree with an AI's output, I take time to articulate why, in writing or aloud, before deciding what to do.",
+          "explanation": "Putting your disagreement into words, before you act on it, turns a vague feeling into a position you can check. The alternative is quietly dropping the objection and then agreeing next time. This one is reverse-scored.",
+          "reference": {
+            "quote": "“Self-evaluation during the output stage can include interventions that surface previous outputs and ask users to ‘think aloud’ about their thought processes, promoting self-awareness in ‘real time’ and supporting users in detecting hallucinations in GenAI outputs.” — Tankelevitch et al. (2024), p. 13.",
+            "citation": "Tankelevitch, L. et al. (2024). The Metacognitive Demands and Opportunities of Generative AI. <i>Proceedings of CHI 2024</i>. <a href=\"https://doi.org/10.1145/3613904.3642902\" target=\"_blank\" rel=\"noopener\">doi:10.1145/3613904.3642902</a>"
+          }
+        },
+        {
+          "id": "B7",
+          "type": "b7_claim",
+          "reverse": false,
+          "task": "Read the short paragraph below and select the central methodological flaw. Answer within 45 seconds, without using any external tool.",
+          "explanation": "This is a behavioural probe, so it does not rely on self-report. Self-reports of reasoning are noisy, because the faculty being measured is also the one doing the judging. Instead, the probe asks you to do a small piece of real reasoning. It rotates from a pool of items to limit memorisation.",
+          "reference": {
+            "quote": "Lee et al. (2025, p. 15): “Future studies could employ alternative measures of critical thinking, such as think-aloud protocols or task-based assessments, to better differentiate between effort reduction and critical thinking processes.”<br>Tankelevitch et al. (2024, p. 8): “Evaluating and relying on AI output requires users to maintain a well-adjusted confidence in their own domain expertise and ability to evaluate output (i.e., self-confidence; Figure 2c).”",
+            "citation": "Lee, H.-P. et al. (2025). The Impact of Generative AI on Critical Thinking: Self-Reported Reductions in Cognitive Effort and Confidence Effects from a Survey of Knowledge Workers. <i>Proceedings of CHI 2025</i>. <a href=\"https://doi.org/10.1145/3706598.3713778\" target=\"_blank\" rel=\"noopener\">doi:10.1145/3706598.3713778</a><br>Tankelevitch, L. et al. (2024). The Metacognitive Demands and Opportunities of Generative AI. <i>Proceedings of CHI 2024</i>. <a href=\"https://doi.org/10.1145/3613904.3642902\" target=\"_blank\" rel=\"noopener\">doi:10.1145/3613904.3642902</a>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "D2",
+      "name": "Creativity & Originality",
+      "section_letter": "C",
+      "section_legend": "In the last two weeks, how often?",
+      "scale": [
+        {
+          "value": 0,
+          "label": "Almost never"
+        },
+        {
+          "value": 1,
+          "label": "Rarely"
+        },
+        {
+          "value": 2,
+          "label": "Sometimes"
+        },
+        {
+          "value": 3,
+          "label": "Often"
+        },
+        {
+          "value": 4,
+          "label": "Almost always"
+        }
+      ],
+      "items": [
+        {
+          "id": "C1",
+          "type": "likert",
+          "reverse": false,
+          "task": "When I sit down to create something (writing, design, code, music, plan), I open an AI tool before I have produced any of my own ideas.",
+          "explanation": "The first idea you come up with, before you ask an AI, is usually the most original you will produce in that session. If you anchor on the AI's first suggestion, you explore fewer ideas from there.",
+          "reference": {
+            "quote": "Doshi and Hauser (2024, p. 1): “Conversely, generative AI may hamper: By anchoring the writer to a specific idea, or starting point for a story, generative AI may restrict the variability of a writer’s own ideas from the start, inhibiting the extent of creative writing.”<br>Kumar et al. (2025, p. 13): “LLMs, however, may also hinder the creative process. In divergent thinking, the introduction of AI-generated ideas may distract participants, consume valuable cognitive resources, or prevent full engagement with the task.”",
+            "citation": "Doshi, A. R. and Hauser, O. P. (2024). Generative AI enhances individual creativity but reduces the collective diversity of novel content. <i>Science Advances</i>, 10(28), eadn5290. <a href=\"https://doi.org/10.1126/sciadv.adn5290\" target=\"_blank\" rel=\"noopener\">doi:10.1126/sciadv.adn5290</a><br>Kumar, H. et al. (2025). Human Creativity in the Age of LLMs: Randomized Experiments on Divergent and Convergent Thinking. <i>Proceedings of CHI 2025</i>. <a href=\"https://doi.org/10.1145/3706598.3714198\" target=\"_blank\" rel=\"noopener\">doi:10.1145/3706598.3714198</a>"
+          }
+        },
+        {
+          "id": "C2",
+          "type": "likert",
+          "reverse": true,
+          "task": "I keep a private space (notebook, sketch app, raw doc) where I generate ideas without any AI in the loop.",
+          "explanation": "Keeping a space that is yours alone is one of the most reliable ways to resist homogenisation. This one is reverse-scored, so having such a space points to less offloading.",
+          "reference": {
+            "quote": "Kosmyna et al. (2025, p. 2): “Brain connectivity systematically scaled down with the amount of external support: the Brain-only group exhibited the strongest, widest-ranging networks, Search Engine group showed intermediate engagement, and LLM assistance elicited the weakest overall coupling.”<br>Kumar et al. (2025, p. 13): “Ensuring that users can effectively transition from AI-supported creativity to autonomous creative work will help mitigate potential long-term harms associated with over-reliance on LLMs...”",
+            "citation": "Kosmyna, N. et al. (2025). Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task. arXiv:2506.08872. <a href=\"https://arxiv.org/abs/2506.08872\" target=\"_blank\" rel=\"noopener\">arxiv.org/abs/2506.08872</a><br>Kumar, H. et al. (2025). Human Creativity in the Age of LLMs: Randomized Experiments on Divergent and Convergent Thinking. <i>Proceedings of CHI 2025</i>. <a href=\"https://doi.org/10.1145/3706598.3714198\" target=\"_blank\" rel=\"noopener\">doi:10.1145/3706598.3714198</a>"
+          }
+        },
+        {
+          "id": "C3",
+          "type": "likert",
+          "reverse": false,
+          "task": "I notice my finished work sounds more like a generic AI register than like me.",
+          "explanation": "This is a small effect that builds up. Any single AI-assisted draft is fine. The slow shift in your voice over time is the thing worth tracking.",
+          "reference": {
+            "quote": "Holzner et al. (2025, p. 15): “Collaboration with GenAI is associated with a significant decrease in idea diversity (pooled g ≈ -0.86), indicating a potential homogenization effect of the AI.”<br>Doshi and Hauser (2024, p. 7): “Specifically, if the publishing (and self-publishing) industry were to embrace more generative AI-inspired stories, our findings suggest that the produced stories would become less unique in aggregate and more similar to each other.”",
+            "citation": "Holzner, N., Maier, S., and Feuerriegel, S. (2025). Generative AI and Creativity: A Systematic Literature Review and Meta-Analysis. arXiv:2505.17241. <a href=\"https://arxiv.org/abs/2505.17241\" target=\"_blank\" rel=\"noopener\">arxiv.org/abs/2505.17241</a><br>Doshi, A. R. and Hauser, O. P. (2024). Generative AI enhances individual creativity but reduces the collective diversity of novel content. <i>Science Advances</i>, 10(28), eadn5290. <a href=\"https://doi.org/10.1126/sciadv.adn5290\" target=\"_blank\" rel=\"noopener\">doi:10.1126/sciadv.adn5290</a>"
+          }
+        },
+        {
+          "id": "C4",
+          "type": "likert",
+          "reverse": false,
+          "task": "When I get an AI suggestion I like, I tend to keep most of its structure rather than rewrite it in my own way.",
+          "explanation": "In any single case the choice is small. Across many cases it adds up. Keeping the AI's structure is faster. Rewriting it in your own way is what keeps the work yours.",
+          "reference": {
+            "quote": "Doshi and Hauser (2024, p. 5): “In short, writers in the two generative AI conditions are anchored to some extent on the generative AI idea presented to them.”<br>Anderson et al. (2024, p. 8 / ACM p. 420): “From one perspective, low inferential distance between CST outputs and finished-looking artifacts can be viewed as enabling algorithmic loafing: simply accepting and passing along the decisions made by the algorithm...”",
+            "citation": "Doshi, A. R. and Hauser, O. P. (2024). Generative AI enhances individual creativity but reduces the collective diversity of novel content. <i>Science Advances</i>, 10(28), eadn5290. <a href=\"https://doi.org/10.1126/sciadv.adn5290\" target=\"_blank\" rel=\"noopener\">doi:10.1126/sciadv.adn5290</a><br>Anderson, B. R., Shah, J. H., and Kreminski, M. (2024). Homogenization Effects of Large Language Models on Human Creative Ideation. <i>Proceedings of Creativity &amp; Cognition 2024</i>. <a href=\"https://doi.org/10.1145/3635636.3656204\" target=\"_blank\" rel=\"noopener\">doi:10.1145/3635636.3656204</a>"
+          }
+        },
+        {
+          "id": "C5",
+          "type": "likert",
+          "reverse": true,
+          "task": "In the last month, I have produced a piece of work I am proud of that contained no AI-generated content.",
+          "explanation": "This is an ownership probe. AI-assisted work is not the problem here. The question is simply whether you can still make something that is clearly your own when you want to. This one is reverse-scored.",
+          "reference": {
+            "quote": "“While Brain-only group claimed full ownership of their texts almost unanimously (16/18 in Session 1, rising to 17/18 by Session 3), LLM Group presented a fragmented and conflicted sense of authorship: some participants claimed full ownership, others explicitly denied it, and many assigned partial credit to themselves (e.g. between 50-90%).” — Kosmyna et al. (2025), p. 148.",
+            "citation": "Kosmyna, N. et al. (2025). Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task. arXiv:2506.08872. <a href=\"https://arxiv.org/abs/2506.08872\" target=\"_blank\" rel=\"noopener\">arxiv.org/abs/2506.08872</a>"
+          }
+        },
+        {
+          "id": "C6",
+          "type": "likert",
+          "reverse": false,
+          "task": "When I'm stuck creatively, my first move is to ask an AI rather than to stay with the discomfort.",
+          "explanation": "The discomfort of being stuck is part of where creative work comes from. The first move you make when you are stuck is the one most worth being deliberate about.",
+          "reference": {
+            "quote": "“Over-reliance on LLMs during divergent thinking may disrupt this exploration, leading to less original ideas, as seen in the originality results (Figure 4).” — Kumar et al. (2025), p. 13.",
+            "citation": "Kumar, H. et al. (2025). Human Creativity in the Age of LLMs: Randomized Experiments on Divergent and Convergent Thinking. <i>Proceedings of CHI 2025</i>. <a href=\"https://doi.org/10.1145/3706598.3714198\" target=\"_blank\" rel=\"noopener\">doi:10.1145/3706598.3714198</a>"
+          }
+        },
+        {
+          "id": "C7",
+          "type": "c7_aut",
+          "reverse": false,
+          "task": "You have 90 seconds. List as many genuinely different uses as you can for the object shown. Type one per line, no AI tools, no search.",
+          "explanation": "This is a standard Alternative Uses Task. It counts two things. One is how many distinct uses you came up with (fluency). The other is how varied they were across categories (flexibility). Your raw text stays in your browser. It is not sent to a server unless you choose to opt in at the end.",
+          "reference": {
+            "quote": "“The list of uses for common bricks that E gives in eight minutes is scored in two ways, for fluency by counting all relevant responses and for flexibility by counting the number of different categories of uses, or, alternatively, the number of times that E shifts category of use. [...] Another faithful marker test for DMC has been Unusual Uses, which was later renamed Alternate Uses... E is asked to state uses, other than the common one, which is stated, for objects such as a newspaper, an automobile tire, or a shoe.” — Guilford (1967), pp. 143, 145.",
+            "citation": "Guilford, J. P. (1967). <i>The Nature of Human Intelligence</i>. McGraw-Hill. ISBN 978-0-07-025135-9."
+          }
+        }
+      ]
+    },
+    {
+      "id": "D3",
+      "name": "Research & Learning",
+      "section_letter": "D",
+      "section_legend": "In the last two weeks, how often?",
+      "scale": [
+        {
+          "value": 0,
+          "label": "Almost never"
+        },
+        {
+          "value": 1,
+          "label": "Rarely"
+        },
+        {
+          "value": 2,
+          "label": "Sometimes"
+        },
+        {
+          "value": 3,
+          "label": "Often"
+        },
+        {
+          "value": 4,
+          "label": "Almost always"
+        }
+      ],
+      "items": [
+        {
+          "id": "D1_item",
+          "type": "likert",
+          "reverse": false,
+          "task": "When I need to learn something new, I ask an AI for a summary instead of reading the source.",
+          "explanation": "Summaries are efficient. They also strip out the structure of an argument and the specific examples that make it stick. The shortcut is real, and so is what it leaves behind.",
+          "reference": {
+            "quote": "“While ChatGPT may aid in managing heavy academic workloads under time constraints, students must be kept aware of the negative consequences of excessive ChatGPT usage. They may be encouraged to use it as a complementary resource for learning instead of a tool for completing academic tasks without investing cognitive efforts.” — Abbas et al. (2024), p. 18.",
+            "citation": "Abbas, M., Jam, F. A., and Khan, T. I. (2024). Is it harmful or helpful? Examining the causes and consequences of generative AI usage among university students. <i>International Journal of Educational Technology in Higher Education</i>, 21, 10. <a href=\"https://doi.org/10.1186/s41239-024-00444-7\" target=\"_blank\" rel=\"noopener\">doi:10.1186/s41239-024-00444-7</a>"
+          }
+        },
+        {
+          "id": "D2_item",
+          "type": "likert",
+          "reverse": true,
+          "task": "I can paraphrase, in my own words and without notes, the main argument of the last serious piece I 'read' through AI summarisation.",
+          "explanation": "This is a retrieval probe. If you can paraphrase from memory, the summary did its job. If you cannot, the summary stood in for reading rather than guiding it. This one is reverse-scored.",
+          "reference": {
+            "quote": "“Correct quoting ability, which goes beyond simple recall to reflect semantic precision, showed the same hierarchical pattern: Brain-only group > Search Engine group > LLM group. The complete absence of correct quoting in the LLM group during Session 1, and persistent impairments in later sessions, suggested that not only was memory encoding shallow, but the semantic content itself may not have been fully internalized.” — Kosmyna et al. (2025), p. 147.",
+            "citation": "Kosmyna, N. et al. (2025). Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task. arXiv:2506.08872. <a href=\"https://arxiv.org/abs/2506.08872\" target=\"_blank\" rel=\"noopener\">arxiv.org/abs/2506.08872</a>"
+          }
+        },
+        {
+          "id": "D3_item",
+          "type": "likert",
+          "reverse": false,
+          "task": "I have caught myself citing or paraphrasing a claim that turned out to be a hallucination or misattribution.",
+          "explanation": "This happens to careful researchers, and not only to careless ones. Your honest answer is really a measure of how often you have caught it. The cases you never noticed are, by definition, not in your count.",
+          "reference": {
+            "quote": "“These trends in newer, fully developed LLMs raise particular concerns for LLM-based scientific summaries, where readers may struggle to distinguish accurate conclusions from algorithmic overgeneralizations. ... Our findings thus offer novel contributions to research on overgeneralization in science communication ... revealing a subtle form of ‘hallucination’ that has not yet been documented in the literature.” — Peters and Chin-Yee (2025), pp. 13-14.",
+            "citation": "Peters, U. and Chin-Yee, B. (2025). Generalization Bias in Large Language Model Summarization of Scientific Research. <i>Royal Society Open Science</i>, 12, 241776. <a href=\"https://doi.org/10.1098/rsos.241776\" target=\"_blank\" rel=\"noopener\">doi:10.1098/rsos.241776</a>"
+          }
+        },
+        {
+          "id": "D4_item",
+          "type": "likert",
+          "reverse": false,
+          "task": "When I 'understand' a topic via AI explanation, I later struggle to apply it to a new case.",
+          "explanation": "Reading an AI explanation can feel like understanding. This is the illusion of competence. It holds up until you have to use the idea in a new situation.",
+          "reference": {
+            "quote": "“However, we additionally find that when access is subsequently taken away, students actually perform worse than those who never had access (17% reduction in grades for GPT Base) — i.e., unfettered access to GPT-4 can harm educational outcomes. ... Without guardrails, students attempt to use GPT-4 as a ‘crutch’ during practice problem sessions, and subsequently perform worse on their own.” — Bastani et al. (2025), p. 1.",
+            "citation": "Bastani, H. et al. (2025). Generative AI without guardrails can harm learning: Evidence from high school mathematics. <i>Proceedings of the National Academy of Sciences</i>, 122(26), e2422633122. <a href=\"https://doi.org/10.1073/pnas.2422633122\" target=\"_blank\" rel=\"noopener\">doi:10.1073/pnas.2422633122</a>"
+          }
+        },
+        {
+          "id": "D5_item",
+          "type": "likert",
+          "reverse": true,
+          "task": "I do at least one weekly task in my domain (reading, coding, writing, analysis) deliberately without AI, to keep the skill warm.",
+          "explanation": "This is a maintenance question. Skills fade without use. This one is reverse-scored, because working without AI now and then keeps the skill warm.",
+          "reference": {
+            "quote": "“Withholding LLM tools during early stages might support memory formation. Brain-only group’s stronger behavioral recall, supported by more robust EEG connectivity, suggests that initial unaided effort promoted durable memory traces, enabling more effective reactivation even when LLM tools were introduced later.” — Kosmyna et al. (2025), p. 150.",
+            "citation": "Kosmyna, N. et al. (2025). Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task. arXiv:2506.08872. <a href=\"https://arxiv.org/abs/2506.08872\" target=\"_blank\" rel=\"noopener\">arxiv.org/abs/2506.08872</a>"
+          }
+        },
+        {
+          "id": "D6_item",
+          "type": "likert",
+          "reverse": false,
+          "task": "I skip the slow, frustrating part of learning (struggle, dead ends, false starts) because AI lets me.",
+          "explanation": "The slow, frustrating part is where a lot of learning happens. Skipping it is comfortable now. It is expensive later, in how little you retain.",
+          "reference": {
+            "quote": "Kumar et al. (2025, p. 13): “Similarly, in convergent thinking tasks, LLMs might steer participants toward specific solutions too quickly, reducing the need for deep engagement with the problem space.”<br>Abbas et al. (2024, p. 18): “While ChatGPT’s ease of use might be alluring, fostering an environment where students derive satisfaction from mastering challenging concepts independently can mitigate overreliance on generative AI tools. Also, recognizing and rewarding students for their genuine intellectual achievements can create a sense of accomplishment that may supersede the allure of quick AI-based solutions.”",
+            "citation": "Kumar, H. et al. (2025). Human Creativity in the Age of LLMs: Randomized Experiments on Divergent and Convergent Thinking. <i>Proceedings of CHI 2025</i>. <a href=\"https://doi.org/10.1145/3706598.3714198\" target=\"_blank\" rel=\"noopener\">doi:10.1145/3706598.3714198</a><br>Abbas, M., Jam, F. A., and Khan, T. I. (2024). Is it harmful or helpful? Examining the causes and consequences of generative AI usage among university students. <i>International Journal of Educational Technology in Higher Education</i>, 21, 10. <a href=\"https://doi.org/10.1186/s41239-024-00444-7\" target=\"_blank\" rel=\"noopener\">doi:10.1186/s41239-024-00444-7</a>"
+          }
+        },
+        {
+          "id": "D7_item",
+          "type": "likert",
+          "reverse": false,
+          "task": "My notes, drafts, and intermediate work increasingly consist of pasted AI output rather than my own writing.",
+          "explanation": "Your notes are where future-you reads past-you's thinking. If they are mostly pasted AI output, then future-you is reading the AI instead of past-you.",
+          "reference": {
+            "quote": "“Qualitatively, we observe that participants integrate GenAI output to their tasks in two distinct ways: they focus either on the content — selecting and manipulating a part of the output for use — or form — modifying style, wording, tone, etc. ... Participants perceived less effort when GenAI automates the creation process (129/319), such as drafting documents, responding to emails, or generating code.” — Lee et al. (2025), pp. 9, 13.",
+            "citation": "Lee, H.-P. et al. (2025). The Impact of Generative AI on Critical Thinking: Self-Reported Reductions in Cognitive Effort and Confidence Effects from a Survey of Knowledge Workers. <i>Proceedings of CHI 2025</i>. <a href=\"https://doi.org/10.1145/3706598.3713778\" target=\"_blank\" rel=\"noopener\">doi:10.1145/3706598.3713778</a>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "D4",
+      "name": "Social & Communicative Capacity",
+      "section_letter": "E",
+      "section_legend": "In the last two weeks, how often?",
+      "scale": [
+        {
+          "value": 0,
+          "label": "Almost never"
+        },
+        {
+          "value": 1,
+          "label": "Rarely"
+        },
+        {
+          "value": 2,
+          "label": "Sometimes"
+        },
+        {
+          "value": 3,
+          "label": "Often"
+        },
+        {
+          "value": 4,
+          "label": "Almost always"
+        }
+      ],
+      "items": [
+        {
+          "id": "E1",
+          "type": "likert",
+          "reverse": false,
+          "task": "I draft personal or sensitive messages (to friends, family, colleagues) by getting an AI to write them first.",
+          "explanation": "The texture of a personal message is where the relationship is built. AI can polish the wording. The framing is part of the message itself, so keep that yours.",
+          "reference": {
+            "quote": "“We find that people choose to use AI when given the opportunity, and this increases the speed of communication and leads to more emotionally positive language. However, we also find that when participants think that their partner is using more algorithmic responses, they perceive them as less cooperative, less affiliative and more dominant.” — Hohenstein et al. (2023), p. 4.",
+            "citation": "Hohenstein, J. et al. (2023). Artificial intelligence in communication impacts language and social relationships. <i>Scientific Reports</i>, 13, 5487. <a href=\"https://doi.org/10.1038/s41598-023-30938-9\" target=\"_blank\" rel=\"noopener\">doi:10.1038/s41598-023-30938-9</a>"
+          }
+        },
+        {
+          "id": "E2",
+          "type": "likert",
+          "reverse": false,
+          "task": "When I want to talk about something emotional or stressful, I find it easier to talk to an AI than to a person.",
+          "explanation": "An AI is always available and never judges you. Those are real reasons to talk to it. They are also reasons to be careful about letting it replace human connection.",
+          "reference": {
+            "quote": "“Our exploratory analysis indeed reveals several individual characteristics that may make people more vulnerable and perceptive to turn to AI chatbots instead of other people. ... Unlike human relationships, AI interactions require minimal accommodation or compromise, potentially offering an appealing alternative for those who have social anxiety or find interpersonal accommodation painful.” — Fang et al. (2025), p. 11.",
+            "citation": "Fang, C. M. et al. (2025). How AI and Human Behaviors Shape Psychosocial Effects of Extended Chatbot Use: A Longitudinal Randomized Controlled Study. arXiv:2503.17473. <a href=\"https://arxiv.org/abs/2503.17473\" target=\"_blank\" rel=\"noopener\">arxiv.org/abs/2503.17473</a>"
+          }
+        },
+        {
+          "id": "E3",
+          "type": "likert",
+          "reverse": true,
+          "task": "I have had a meaningful, AI-free conversation longer than 20 minutes in the last week (in person, by phone, or by video call).",
+          "explanation": "This is a simple presence probe. This one is reverse-scored, because a meaningful conversation in the last week is a good sign.",
+          "reference": {
+            "quote": "“Specifically, with an increase in daily duration, the regression models predicted higher loneliness..., less socialization..., more emotional dependence on the chatbot..., and more problematic use of the chatbot. ... In other words, regardless of condition, the more time voluntarily spent with the chatbot, the relatively worse their psychosocial outcomes were.” — Fang et al. (2025), p. 5.",
+            "citation": "Fang, C. M. et al. (2025). How AI and Human Behaviors Shape Psychosocial Effects of Extended Chatbot Use: A Longitudinal Randomized Controlled Study. arXiv:2503.17473. <a href=\"https://arxiv.org/abs/2503.17473\" target=\"_blank\" rel=\"noopener\">arxiv.org/abs/2503.17473</a>"
+          }
+        },
+        {
+          "id": "E4",
+          "type": "likert",
+          "reverse": false,
+          "task": "I notice myself reading other people's writing and assuming it must be AI-generated.",
+          "explanation": "This is a side effect of AI writing being everywhere. A general suspicion creeps in, and it chips away at the habit of taking someone's words as their own.",
+          "reference": {
+            "quote": "Jakesch et al. (2023, p. 1): “In six experiments, participants (N = 4,600) were unable to detect self-presentations generated by state-of-the-art AI language models in professional, hospitality, and dating contexts. A computational analysis of language features shows that human judgments of AI-generated language are hindered by intuitive but flawed heuristics...”<br>Riley et al. (2025, PDF p. 9 / printed p. 8): “However, users still reported reduced trust in their human communication partner, if they suspected their email partner was using AI to communicate with them.”",
+            "citation": "Jakesch, M., Hancock, J. T., and Naaman, M. (2023). Human heuristics for AI-generated language are flawed. <i>Proceedings of the National Academy of Sciences</i>, 120(11), e2208839120. <a href=\"https://doi.org/10.1073/pnas.2208839120\" target=\"_blank\" rel=\"noopener\">doi:10.1073/pnas.2208839120</a><br>Riley, C., Al-Refai, O., Colunga Reyes, Y., and Hammad, E. (2025). Human-AI Interactions: Cognitive, Behavioral, and Emotional Impacts. arXiv:2510.17753. <a href=\"https://arxiv.org/abs/2510.17753\" target=\"_blank\" rel=\"noopener\">arxiv.org/abs/2510.17753</a>"
+          }
+        },
+        {
+          "id": "E5",
+          "type": "likert",
+          "reverse": false,
+          "task": "I prefer AI responses to human ones because the AI is faster, more available, or less judgmental.",
+          "explanation": "Sometimes the preference is well-founded. What this question asks about is the pattern of that preference, built up over weeks.",
+          "reference": {
+            "quote": "“Unlike human relationships, AI interactions require minimal accommodation or compromise, potentially offering an appealing alternative for those who have social anxiety or find interpersonal accommodation painful. ... A potential explanation is that worse social skills from the chatbot lead to less attachment, while being overly validating of the user can lead to the user preferring the chatbot over human interaction.” — Fang et al. (2025), pp. 11-12.",
+            "citation": "Fang, C. M. et al. (2025). How AI and Human Behaviors Shape Psychosocial Effects of Extended Chatbot Use: A Longitudinal Randomized Controlled Study. arXiv:2503.17473. <a href=\"https://arxiv.org/abs/2503.17473\" target=\"_blank\" rel=\"noopener\">arxiv.org/abs/2503.17473</a>"
+          }
+        },
+        {
+          "id": "E6",
+          "type": "likert",
+          "reverse": false,
+          "task": "I have reduced the time I spend in human-to-human casual exchange (in person, on the phone, on text) since I started using AI tools heavily.",
+          "explanation": "Casual exchange is unglamorous and matters more than it looks. The small, everyday interactions are where relationships are kept up.",
+          "reference": {
+            "quote": "“Regardless of experimental condition, participants who voluntarily spent more time with the chatbot were associated with worse outcomes: higher loneliness, less socialization with real people, more emotional dependence, and more problematic use.” — Fang et al. (2025), pp. 10-11.",
+            "citation": "Fang, C. M. et al. (2025). How AI and Human Behaviors Shape Psychosocial Effects of Extended Chatbot Use: A Longitudinal Randomized Controlled Study. arXiv:2503.17473. <a href=\"https://arxiv.org/abs/2503.17473\" target=\"_blank\" rel=\"noopener\">arxiv.org/abs/2503.17473</a>"
+          }
+        },
+        {
+          "id": "E7",
+          "type": "likert",
+          "reverse": true,
+          "task": "When I face a small social or interpersonal decision (how to phrase an apology, how to set a boundary, how to push back on a colleague), I work it out by thinking it through myself or talking to a trusted person before, or instead of, asking an AI.",
+          "explanation": "Working it out yourself, or with someone you trust, is the practice. An AI can be useful at the end of that process. The question is whether you are doing the process at all. This one is reverse-scored.",
+          "reference": {
+            "quote": "“One key question that pertains to users’ automation strategy is whether to automate a certain task. Inappropriate reliance on GenAI may result in lost productivity, increased risk of errors, or potential de-skilling. Users must therefore have self-awareness of the applicability of GenAI for their workflow, and well-adjusted confidence in their ability to complete the task manually versus with GenAI.” — Tankelevitch et al. (2024), p. 10.",
+            "citation": "Tankelevitch, L. et al. (2024). The Metacognitive Demands and Opportunities of Generative AI. <i>Proceedings of CHI 2024</i>. <a href=\"https://doi.org/10.1145/3613904.3642902\" target=\"_blank\" rel=\"noopener\">doi:10.1145/3613904.3642902</a>"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "titleSuffix": "about",
+  "bodyClass": "page-about",
+  "mainClass": "content-page",
+  "header": {
+    "titleHtml": "<em>PAUSE</em>, explained",
+    "ledeHtml": "PAUSE stands for <em>Patterns of AI Use: Self-Examination</em>. It is a free, anonymous, citation-grounded self-check for how AI tools may be shaping a person's habits of thought."
+  },
+  "blocks": [
+    {
+      "type": "section",
+      "heading": "The focus",
+      "body": [
+        {
+          "p": "PAUSE helps you reflect on self-reported, cross-sectional <strong>AI-associated cognitive offloading patterns</strong> across four everyday capabilities. These are reasoning and critical thinking, creativity and originality, research and learning, and social and communicative capacity. It does not measure intelligence, cognitive impairment, mental illness, or any underlying ability. A high reading does not mean a person is using AI \"wrong\". A low reading does not mean a person is safe from offloading effects. The reading is a snapshot of behaviour in the last two weeks."
+        },
+        {
+          "p": "Cognitive offloading is not inherently harmful. Humans have always offloaded thinking onto notes, calculators, maps, calendars, search engines, and other people, usually to good effect. PAUSE does not assume that AI use is harmful. It looks at a narrower case. That is the substitution-heavy, unreflective kind of offloading, where AI takes over effort you may want to keep."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "The design",
+      "body": [
+        {
+          "p": "There are behavioural items across four domains, and about one third are reverse-scored. There are two short probes. One is a claim-evaluation reasoning probe drawn from a rotated pool. The other is a 90-second Alternative Uses Task, scored in your browser. A small before-and-after block compares your habits now with how they were before you used AI regularly. Feedback is branched for six self-identified roles."
+        },
+        {
+          "p": "Every item is anchored in a peer-reviewed or arXiv paper from 2023 to 2026. The citation, with an exact-quote excerpt, is one click away on every question and on every result-page recommendation."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "Scope",
+      "body": [
+        {
+          "p": "<strong>PAUSE is a self-reflection tool. It is not a research participation pathway.</strong> The tool performs the self-check and scoring entirely in your browser. No responses, scores, free-text inputs, or derived metrics are transmitted to any server or persisted beyond your active browser session. There is no backend and no data collection of any kind."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "The status",
+      "body": [
+        {
+          "p": "PAUSE is a <strong>self-reflection tool</strong>. It has not been validated as a psychological instrument. It does not present reliability, factor-structure, or validity evidence. Treat the readings as descriptive self-reflection rather than measurement."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "The stance",
+      "body": [
+        {
+          "p": "PAUSE is meant to work as a <strong>counter-balance</strong>. It does not try to diagnose anyone. Its job is to insert a small, structured pause into a person's relationship with their AI tools. That way they can see their own habits and choose differently if they want to. The name says what it does."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "The license",
+      "body": [
+        {
+          "ul": {
+            "items": [
+              "<strong>Code:</strong> MIT.",
+              "<strong>Instrument items and scoring rubric:</strong> CC-BY 4.0.",
+              "<strong>Manuscript:</strong> CC-BY-SA 4.0."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "The author",
+      "body": [
+        {
+          "p": "Built and maintained by Mahbub Ul Alam (Anondo)."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "Read more",
+      "body": [
+        {
+          "ul": {
+            "items": [
+              "<a href=\"pages/paper.html\">The paper</a>: the manuscript and source live in the repository.",
+              "<a href=\"pages/privacy.html\">Privacy notice</a> in plain language.",
+              "Source code on <a href=\"https://github.com/anondo1969/pause\" target=\"_blank\" rel=\"noopener\">GitHub</a>."
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "heading": "Contact",
+      "body": [
+        {
+          "p": "To ask about collaboration or translation, or to report an item-comprehension issue, open an issue on the GitHub repository."
+        },
+        {
+          "p": "You can also reach me directly by email at <a href=\"mailto:mahbub.ul.alam.anondo@gmail.com\">mahbub.ul.alam.anondo@gmail.com</a> or on <a href=\"https://www.linkedin.com/in/anondo\" target=\"_blank\" rel=\"noopener\">LinkedIn</a>."
+        }
+      ]
+    }
+  ]
+}

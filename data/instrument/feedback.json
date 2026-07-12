@@ -1,0 +1,58 @@
+{
+  "D1": {
+    "name": "Reasoning & Critical Thinking",
+    "minimal": {
+      "_all": "Your self-reported verification habits look strong. When scores are low, the main risk is complacency. Stay a little suspicious of confident AI answers, even in areas you know well."
+    },
+    "moderate_and_above": {
+      "researcher": "This week, write one short critique of an AI-generated answer in your field. Give it the same scrutiny you would give a peer review.",
+      "creative": "Before you open an AI tool, spend 10 minutes writing the problem in your own words. Keep that page.",
+      "student": "For one assignment this week, write the full first draft offline. Bring AI in afterwards, and only to poke holes in what you wrote.",
+      "knowledge_worker": "Pick one important AI-generated claim from your week. Trace it back to the source yourself. Notice where the chain broke, if it did.",
+      "software_engineer": "For one task this week, write the function and the tests before you use any AI. Then compare your structure with what the AI would have produced.",
+      "other": "Pick one AI answer you used this week. In two sentences, write down where it might be wrong."
+    }
+  },
+  "D2": {
+    "name": "Creativity & Originality",
+    "minimal": {
+      "_all": "Your habits suggest you still own your creative process. Watch for a slow shift over time. Anchoring effects work hardest when you do not notice them."
+    },
+    "moderate_and_above": {
+      "researcher": "Start your next paper section in a paper notebook. Get one full page of your own thinking before you open a chat.",
+      "creative": "Try a one-week AI-free draft. Just one draft. Notice what changes in your voice.",
+      "student": "For one essay or project, write your own outline first. Then look at the outline an AI would produce. Choose which one to use on purpose.",
+      "knowledge_worker": "Brainstorm your next deliverable on paper for 15 minutes before you go near a tool. Write down the bad ideas too.",
+      "software_engineer": "Sketch the architecture by hand first. Working out the structure is the real creative part. Let AI help with the building afterwards.",
+      "other": "Pick one creative output this week (writing, a plan, a design, an image idea) and make it without AI."
+    }
+  },
+  "D3": {
+    "name": "Research & Learning",
+    "minimal": {
+      "_all": "You are keeping your synthesis skills active. The harder part is keeping this up as AI tools get better at summarising for you."
+    },
+    "moderate_and_above": {
+      "researcher": "Read one paper this week from start to finish without running it through an AI. Take notes by hand. Afterwards you can compare with the AI summary you would have used.",
+      "creative": "When you learn a new technique or reference, work from the original source for an hour before you turn to AI explainers.",
+      "student": "For one topic this week, try active recall first. Close the tab and write what you remember. Then ask AI to fill the gaps.",
+      "knowledge_worker": "When you learn a new domain for a project, build your own concept map from primary sources first. Then ask AI to organise it.",
+      "software_engineer": "For one new library or pattern, read the docs and the source before you ask AI to explain it. Notice how much more you retain.",
+      "other": "Pick one thing you 'learned' this week through an AI summary. Try to teach it back to yourself in writing. Notice the gaps."
+    }
+  },
+  "D4": {
+    "name": "Social & Communicative Capacity",
+    "minimal": {
+      "_all": "Your communication is still mostly your own. Watch the small stuff. A lot of little AI-drafted messages can add up to a real change in your voice over a few months."
+    },
+    "moderate_and_above": {
+      "researcher": "Draft your next collaboration email yourself. What builds the relationship is the texture of your own writing.",
+      "creative": "Send one personal, AI-free message to a friend or collaborator this week. Notice if you feel exposed.",
+      "student": "For at least one hard conversation this week (with a professor, a roommate, a parent), think it through with someone you trust.",
+      "knowledge_worker": "When you prepare a sensitive message (feedback, conflict, bad news), write your own draft first. You can let AI tidy the wording afterwards. Keep the framing your own.",
+      "software_engineer": "A PR description, a design doc, a team apology. These are all social acts. Draft the first version in your own voice.",
+      "other": "Have one meaningful, AI-free conversation this week with another person, in person if you can."
+    }
+  }
+}
