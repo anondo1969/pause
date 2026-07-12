@@ -181,15 +181,13 @@ There is no backend. The application transmits nothing, stores nothing server-si
 
 **Figure 2:** What *citation-grounded* means, shown on item B5 as rendered by the deployed tool. Every scored item has the same three-part anatomy: the behavioural task with its response scale and a *Not applicable* option; an expandable *Why this question* panel giving the item’s rationale in plain language; and an expandable *Reference* panel containing an exact quote from the anchoring study above the full citation with a resolvable DOI. Both panels can be opened before answering, so the respondent can always inspect the evidence behind a question rather than take the item on trust.
 
-![Figure 3a](media/compare-chart.png)
+![Figure 3](media/offloading-pattern-demo.png)
 
-**Figure 3a:** The trajectory chart: one smoothed line per domain over six monthly sessions, with final readings labelled at the line ends. The diagonal watermark marks the data as synthetic even in a cropped screenshot.
+**Figure 3:** What you get back: four readings, each with a small practice to try, and no single verdict (demo data).
 
-![Figure 3b](media/compare-deltas.png)
+![Figure 4](media/compare-pattern-demo.png)
 
-**Figure 3b:** Per-domain delta cards: the latest reading, the last-minus-first change on the 0 to 100 scale, and the descriptive band of the latest session.
-
-**Figure 3:** The Compare view rendering the synthetic six-month demo trajectory, shown top to bottom as the respondent sees it. Everything in all these panels is computed in the browser from the pasted return tokens alone; no token is transmitted, stored, or linked to any identity.
+**Figure 4:** The Compare view rendering the synthetic six-month demo trajectory, shown top to bottom as the respondent sees it. Everything in all these panels is computed in the browser from the pasted return tokens alone; no token is transmitted, stored, or linked to any identity.
 
 ## License
 
