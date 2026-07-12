@@ -1,6 +1,6 @@
 # PAUSE: Patterns of AI Use: Self-Examination
 
-A free, anonymous, browser-based self-reflection tool for noticing how everyday AI use may be shaping your habits of thought, across four areas: reasoning, creativity, research and learning, and social and communicative capacity.
+A free, anonymous, browser-based self-reflection tool for noticing how everyday AI use may be shaping your habits of thought, across four areas: *reasoning & critical thinking*, *creativity & originality*, *research & learning*, and *social & communicative capacity*.
 
 **Live tool:** [anondo1969.github.io/pause](https://anondo1969.github.io/pause)
 
