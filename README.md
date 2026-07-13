@@ -216,4 +216,4 @@ doi={10.48550/arXiv.2407.10777},
 
 Questions, collaboration, translation offers, or item-comprehension issues: open an issue on this repository.
 
-You can also reach me directly by email at <a href=\"mailto:mahbub.ul.alam.anondo@gmail.com\">mahbub.ul.alam.anondo@gmail.com</a> or on <a href=\"https://www.linkedin.com/in/anondo\" target=\"_blank\" rel=\"noopener\">LinkedIn</a>.
+You can also reach me directly by email at mahbub.ul.alam.anondo@gmail.com</a> or on **[LinkedIn](https://www.linkedin.com/in/anondo/)**.
