@@ -18,7 +18,7 @@ The evidence points in both directions, and that is the point. On one side: a sm
 
 The variable that keeps mattering is not exposure. It is the pattern of use. Whether AI arrives before or after you have framed the problem yourself. Whether you verify or accept. Whether you rewrite its suggestions in your own voice or keep the template. These are habits, and habits are exactly the kind of thing you can notice and adjust, if you can see them.
 
-Validated scales exist for AI dependence and AI literacy, but they are built for researchers measuring constructs. There was no public, citation-grounded way for an individual to sit down for five minutes and ask: what does my own pattern actually look like? That ninety-second moment, and that gap, led me to build PAUSE.
+Validated scales exist for AI dependence and AI literacy, but they are built for researchers measuring constructs. There was no public, citation-grounded way for an individual to sit down for ten minutes and ask: what does my own pattern actually look like? That ninety-second moment, and that gap, led me to build PAUSE.
 
 ## A calibration check, not a verdict
 
@@ -78,7 +78,7 @@ The point is not to add another metric to your life. It is to insert a single, s
 
 AI is not going away, and I do not want it to. I want to use it well. The point was never to use AI less. The point is to use it on purpose.
 
----
+## Try PAUSE
 
 **Try PAUSE:** <https://anondo1969.github.io/pause>
 
@@ -86,6 +86,5 @@ AI is not going away, and I do not want it to. I want to use it well. The point 
 
 **Paper, with references for every study mentioned above:** <https://doi.org/10.48550/arXiv.xxxx.xxxxx>
 
----
 
 What habit helps you keep AI as a scaffold rather than a substitute? Drop a comment or reach out directly.
