@@ -1,4 +1,4 @@
-# Pause Before You Prompt
+# PAUSE Before You Prompt
 
 *A private 10-minute self-check tool for using AI as a scaffold instead of a substitute.*
 
@@ -66,11 +66,13 @@ The whole thing is open source under the MIT License, deployable as a static sit
 
 PAUSE is mainly for individuals who use AI regularly and want a periodic calibration check. Educators may also find it useful as a conversation starter about scaffolded AI use, though it should never be used to grade, rank, or evaluate students. Researchers and HCI practitioners can inspect, adapt, or translate the open item set and scoring logic.
 
-And to be unambiguous: PAUSE is not a validated psychological instrument. It presents no reliability or validity evidence in the psychometric sense. The behavioural probes use provisional heuristics, some of the anchoring studies are recent preprints, and the four-domain structure is a working organisation, not a confirmed factor analysis. The most defensible reading of a result is this: in the last two weeks, my self-reported behaviour matches a pattern that recent studies associate with cognitive offloading in this domain. That does not mean I am declining or harmed. It means I have information I did not have before, so I can choose differently if I want to.
+And to be unambiguous: PAUSE is not a validated psychological instrument. It presents no reliability or validity evidence in the psychometric sense. The behavioural probes use provisional heuristics, some of the anchoring studies are recent preprints, and the four-domain structure is a working organisation, not a confirmed factor analysis. The most defensible reading of a result is this:
+
+> in the last two weeks, my self-reported behaviour matches a pattern that recent studies associate with cognitive offloading in this domain. That does not mean I am declining or harmed. It means I have information I did not have before, so I can choose differently if I want to.
 
 ## Use the result lightly
 
-If you use AI daily, and hundreds of millions of people now do, take five minutes. Run the self-check. Look at the four domain readings. Then pick one habit, at most, to adjust. The recommendations are framed as practices to consider, not prescriptions to follow, and a reading held lightly is worth more than a score taken seriously.
+If you use AI daily, and hundreds of millions of people now do, take ten minutes. Run the self-check. Look at the four domain readings. Then pick one habit, at most, to adjust. The recommendations are framed as practices to consider, not prescriptions to follow, and a reading held lightly is worth more than a score taken seriously.
 
 The point is not to add another metric to your life. It is to insert a single, structured pause into a relationship with a technology that is otherwise optimised for frictionless, continuous use.
 
