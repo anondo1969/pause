@@ -1,6 +1,6 @@
 # Pause Before You Prompt
 
-*A private 10-minute self-check for using AI as a scaffold, not a substitute.*
+*A private 10-minute self-check tool for using AI as a scaffold instead of a substitute.*
 
 ---
 
