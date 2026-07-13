@@ -6,7 +6,9 @@ SciLifeLab Data Centre, Uppsala University, Sweden\
 
 **PAUSE** (**P**atterns of **A**I **U**se: **S**elf-**E**xamination) is a public self-reflection tool for AI usage patterns.
 
-**Live tool:** <https://anondo1969.github.io/pause> · **Source code:** <https://github.com/anondo1969/pause>
+**Live tool:** <https://anondo1969.github.io/pause>
+
+**Source code:** <https://github.com/anondo1969/pause>
 
 ## Abstract
 
@@ -46,7 +48,7 @@ In summary, PAUSE is designed to make a person briefly stop using software, atte
 
 Throughout this paper, “AI” refers to consumer-facing generative artificial intelligence built on large language models (LLMs): chat assistants such as ChatGPT, Claude, Gemini, and Copilot, their API (Application Programming Interface)-accessible models, and the smart-reply, autocomplete, and summarisation features built on top of them. This is the class of tool whose cognitive consequences the 2023–2026 literature documents, and it is the class the items ask the respondent to introspect about. The terms “AI”, “LLM”, “GenAI”, “chatbot”, and “AI tool” are used interchangeably below.
 
-The self-check does not cover classical recommender systems, pre-LLM predictive features such as spam filters, or embodied and task-specific AI. I scope it this way for an empirical reason. The studies anchoring the four domains (Section 3.1) concern LLM-class tools used in cognitive tasks, and PAUSE inherits that scope. The respondent-facing wording uses “AI” for accessibility, and the landing page and the “About this tool” panel spell out the scope for anyone who wants the specifics.
+The self-check does not cover classical recommender systems, pre-LLM predictive features such as spam filters, or embodied and task-specific AI. I scope it this way for an empirical reason. The studies anchoring the four domains (Section 3.1) concern LLM-class tools used in cognitive tasks, and PAUSE inherits that scope. The respondent-facing wording uses “AI” for accessibility, and the landing page spells out the scope for anyone who wants the specifics.
 
 ### 1.2 Contributions
 
@@ -54,9 +56,9 @@ I make three contributions in this paper:
 
 1.  A four-domain mapping from the 2023–2026 empirical literature on LLM-associated cognitive effects to a self-reflection structure, with item-level citations (Appendix A).
 
-2.  A public, citation-grounded set of reflective items, reverse-scored to counter agreement bias, paired with two short behavioural probes (a claim-evaluation reasoning probe and an Alternative Uses creativity probe) and a non-scored retrospective before-and-after block.
+2.  A public, citation-grounded set of reflective items, reverse-scored to counter agreement bias, paired with two short behavioural probes (a claim-evaluation reasoning probe and an Alternative Uses creativity probe) and a non-scored retrospective before-and-after block (Appendix A and Appendix B).
 
-3.  A privacy-by-design, no-backend reference web application that performs all scoring client-side, collects and transmits nothing, and involves no LLM in production; deployable as a static site or self-hosted.
+3.  A privacy-by-design, no-backend reference web application that performs all scoring client-side, collects and transmits nothing, and involves no LLM in production; deployable as a static site or self-hosted (**link:** [anondo1969.github.io/pause](https://anondo1969.github.io/pause)).
 
 ## 2. Related Work
 
@@ -136,7 +138,7 @@ For each domain d ∈ {D1, D2, D3, D4}:
 
 - Each domain reading is mapped to one of four descriptive bands for display: *Minimal offloading signal* (0 to 24), *Mild* (25 to 49), *Moderate* (50 to 74), and *Strong offloading signal* (75 to 100). These are fixed, quarter-width cut points on the 0 to 100 scale, chosen for legibility rather than derived from a norming sample, and they carry no diagnostic meaning.
 
-**There is no overall composite.** A single number across four domains of unequal weight and uneven character would compress more than it reveals, on the jagged-frontier grounds above, so the tool neither computes nor shows one. The four domains are reported separately.
+**There is no overall composite.** A single number across four domains of unequal weight and uneven character would compress more than it reveals, on the jagged-frontier grounds above (Dell’Acqua et al. (2023)), so the tool neither computes nor shows one. The four domains are reported separately.
 
 ### 3.4 Domain branching
 
@@ -186,11 +188,11 @@ The self-check works on mobile and desktop browsers, with keyboard navigation, s
 
 I frame PAUSE throughout as a tool for self-reflection rather than a measurement instrument. A persistent banner states that it is not validated, that a reading need not reflect any stable underlying trait, and that its readings should not drive real-world decisions. In keeping with this, the four band labels (*Minimal*, *Mild*, *Moderate*, and *Strong offloading signal*) are marked as descriptive rather than normed (defined in Section 3.3).
 
-The result page avoids clinical language: no respondent is described as “impaired” or “at risk”. Its header names the reading in neutral terms of AI-use patterns, and I keep the project name out of the reading area, placing it only in the footer and the “About this tool” panel. A high reading is neither a verdict nor a reason to stop using AI tools, and a low reading is no kind of clearance: each reports only the match between recent self-reported behaviour and a pattern the literature associates with offloading. My aim is conscious, structured engagement, not abstinence.
+The result page avoids clinical language: no respondent is described as “impaired” or “at risk”. Its header names the reading in neutral terms of AI-use patterns. A high reading is neither a verdict nor a reason to stop using AI tools, and a low reading is no kind of clearance: each reports only the match between recent self-reported behaviour and a pattern the literature associates with offloading. My aim is conscious, structured engagement, not abstinence.
 
 I present the domain-aware recommendations as practices to consider, drawn from the counter-design literature (Section 2.3), not as prescriptions, treatment advice, or claims tested on the individual respondent. A reading is for that respondent’s own reflection and must not justify any consequential decision about them or anyone else, whether hiring, admissions, performance evaluation, or clinical or educational assessment.
 
-PAUSE is not designed for minors. A soft, non-blocking age check precedes the self-check (Section 4); a negative response explains that the tool is not intended for those under 18 and invites the respondent to return when they are. Because the design is privacy-preserving, I deliberately avoid a hard age gate that would require identity verification. Nothing a respondent enters is collected, transmitted, or stored beyond the session, so the attestation is retained nowhere and no respondent’s identity is captured at any point.
+PAUSE is not designed for minors. A soft, non-blocking age check precedes the self-check; a negative response explains that the tool is not intended for those under 18 and invites the respondent to return when they are. Because the design is privacy-preserving, I deliberately avoid a hard age gate that would require identity verification. Nothing a respondent enters is collected, transmitted, or stored beyond the session, so the attestation is retained nowhere and no respondent’s identity is captured at any point.
 
 ## 5. Worked example: a single result and a six-month comparison
 
@@ -211,7 +213,7 @@ A creative professional (a freelance writer) selects *Creative professional*, re
 | B7 (probe)                          | Identifies a non-central flaw            |      —       |   2   |
 | Total across the seven scored items |                                          |              |  20   |
 
-**Table 1:** Worked D1 (Reasoning & Critical Thinking) scoring for the illustrative respondent of Section 5. The three reverse-scored items (B1, B3, B6) are shown *after* flipping, so a higher coded value always indicates more self-reported offloading. The seven-item total of 20 gives a mean of 20/7 = 2.86, which scales to a domain reading of 71, a *Moderate offloading signal* under the fixed bands of Section 3.3.
+**Table 1:** Worked D1 (*Reasoning & Critical Thinking*) scoring for the illustrative respondent of Section 5. The three reverse-scored items (B1, B3, B6) are shown *after* flipping, so a higher coded value always indicates more self-reported offloading. The seven-item total of 20 gives a mean of 20/7 = 2.86, which scales to a domain reading of 71, a *Moderate offloading signal* under the fixed bands of Section 3.3.
 
 The mean is 20/7 = 2.86, scaled to **71** on 0–100: a *Moderate offloading signal* (Section 3.3). Their full result is *Reasoning & Critical Thinking* 71, *Creativity & Originality* 93, *Research & Learning* 71, *Social & Communicative Capacity* 75, that is, *Moderate*, *Strong*, *Moderate*, and *Strong offloading signal*. Each domain appears as a labelled bar with one practice:
 
@@ -240,7 +242,7 @@ A short profile-aware summary sits above the bars:
 
 Comparison over time uses the return token (Section 4.2): the respondent copies a short opaque string at each session and keeps it; pasting several back reconstructs the trajectory entirely in the browser, and PAUSE stores nothing between visits. The tool ships with a synthetic demo trajectory of six monthly sessions (February to July), summarised in Table 2.
 
-Figure 3a shows the trajectory chart and Figure 3b the per-domain delta cards, as the respondent sees them; the narrated analysis panel that follows is provided in Section 5.2.1.
+Figure 3a shows the trajectory chart and Figure 3b the per-domain delta cards, as the respondent sees them; the narrated analysis panel that follows is provided in Figure 4.
 
 ![Figure 3a](media/compare-chart.png)
 
@@ -252,17 +254,9 @@ Figure 3a shows the trajectory chart and Figure 3b the per-domain delta cards, a
 
 **Figure 3:** The Compare view rendering the synthetic six-month demo trajectory of Table 2, shown top to bottom as the respondent sees it. Everything in all these panels is computed in the browser from the pasted return tokens alone; no token is transmitted, stored, or linked to any identity.
 
-#### 5.2.1 The narrated analysis
+![Figure 4](media/compare-narrated-analysis.png)
 
-The trajectory panel narrates each change in the same neutral register:
-
-- IMPROVING *Reasoning & Critical Thinking* dropped 23 points, from moderate to mild offloading. Whatever you changed in this area appears to be working. Stay with it.
-
-- IMPROVING *Creativity & Originality* dropped 26 points, from strong to moderate offloading. Whatever you changed in this area appears to be working. Stay with it.
-
-- IMPROVING *Research & Learning* dropped 34 points, from moderate to minimal offloading. Whatever you changed in this area appears to be working. Stay with it.
-
-- NEEDS ATTENTION *Social & Communicative Capacity* climbed 45 points, from mild to strong offloading. This is the area most worth pausing on. Consider revisiting the practice recommendation from your most recent result.
+**Figure 4:** The trajectory panel narrates each change in the same neutral register.
 
 ## 6. Discussion
 
@@ -302,13 +296,13 @@ I designed PAUSE to make visible what the 2023–2026 empirical literature has b
 
 The design reflects three deliberate choices. First, epistemic humility. Readings describe self-reported offloading patterns, there is no overall composite, and nothing is diagnosed. Second, transparency. Every item is anchored to a specific empirical finding, and the full item set and scoring code are open from launch. Third, privacy by design. The tool records none of the respondent’s answers, sends nothing to a server, and runs no LLM in production.
 
-The limits matter as much as the features, and they sit on the result page itself: the tool is a reflection aid, its probes are simple, some of its anchors are preprints, and its four domains are a working organisation. If PAUSE serves its purpose, people will take it briefly and periodically, notice their patterns, and choose differently where they want to. It is my attempt at public, citation-grounded, privacy-preserving self-reflection for one of the defining cognitive shifts of this decade.
+The limits matter as much as the features: the tool is a reflection aid, its probes are simple, some of its anchors are preprints, and its four domains are a working organisation. If PAUSE serves its purpose, people will take it briefly and periodically, notice their patterns, and choose differently where they want to. It is my attempt at public, citation-grounded, privacy-preserving self-reflection for one of the defining cognitive shifts of this decade.
 
 ## 8. Availability
 
 - **Source code:** [github.com/anondo1969/pause](https://github.com/anondo1969/pause) (MIT licence)
 
-- **Self-check items and scoring:** released as Appendix A of this paper and as a standalone CC-BY 4.0 document
+- **Self-check items and scoring:** released as Appendix A and Appendix B of this paper and as a standalone CC-BY 4.0 document
 
 - **Live tool:** [anondo1969.github.io/pause](https://anondo1969.github.io/pause) (GitHub Pages), no login required, no data collected
 
@@ -320,7 +314,7 @@ The scoring module, the AUT category dictionary, the B7 pool, and the feedback l
 
 All items have a “Not applicable” option in addition to the response scale shown. For the Likert items this is a checkbox; for the two timed probes (B7, C7) it takes the form of an explicit skip control, and a B7 timer that expires without an answer is likewise scored as not applicable (Section 3.5). Each behavioural item is anchored to a study that motivated its design; anchors are supporting evidence for an item’s framing, not validation of it.
 
-*Sections A, BL, B, C, D, and E correspond to entries in the deployed `items.json` (the questionnaire flow). The age check (H) is implemented as a pre-self-check modal (Section 4).*
+*Sections A, BL, B, C, D, and E correspond to entries in the deployed `items.json` (the questionnaire flow). The age check (H) is implemented as a pre-self-check modal.*
 
 ### Section A: Context (not part of the reading)
 

@@ -117,6 +117,15 @@
       ]
     },
     {
+      "type": "section",
+      "heading": "What PAUSE means by <em>AI</em>",
+      "body": [
+		  {
+		    "p": "<strong>AI refers to consumer-facing generative artificial intelligence built on large language models (LLMs)</strong>: chat assistants such as ChatGPT, Claude, Gemini, and Copilot, their API (Application Programming Interface)-accessible models, and the smart-reply, autocomplete, and summarisation features built on top of them. The terms <em>AI</em>, <em>LLM</em>, <em>GenAI</em>, <em>chatbot</em>, and <em>AI tool</em> are used interchangeably"
+		  }
+      ]
+    },
+    {
       "type": "cta",
       "heading": "Ready?",
       "ledeHtml": "It takes about ten minutes. You can stop at any time. Your answers stay on your device.",

@@ -88,6 +88,7 @@ Long-form documents (the essay, the paper, the privacy explainer) are Markdown f
 │   ├── smoke.js                    Boots all pages in a simulated browser
 │   ├── smoke_full_quiz.js          Drives the self-check end to end
 │   ├── smoke_hash.js               Token-via-URL comparison flow
+│   ├── package.json                Script description
 │   └── README.md                   How to run everything
 │
 └── data/

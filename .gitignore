@@ -65,6 +65,7 @@
 !/tests/smoke_full_quiz.js
 !/tests/smoke_hash.js
 !/tests/README.md
+!/tests/package.json
 
 # data/ (root file)
 !/data/site.json
@@ -100,3 +101,4 @@
 !/media/compare-deltas.png
 !/media/offloading-pattern-demo.png
 !/media/compare-demo.png
+!/media/compare-narrated-analysis.png

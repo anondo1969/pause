@@ -1,0 +1,17 @@
+{
+  "name": "pause-verification-suite",
+  "version": "1.0.0",
+  "description": "Reproducible verification suite for the claims in the PAUSE paper, run against the production code of the PAUSE repository.",
+  "private": true,
+  "scripts": {
+    "verify": "node audit.js",
+    "smoke": "node smoke.js",
+    "quiz": "node smoke_full_quiz.js",
+    "quiz:skip-probes": "SKIP_PROBES=1 node smoke_full_quiz.js",
+    "compare-hash": "node smoke_hash.js",
+    "all": "node audit.js && node smoke.js && node smoke_full_quiz.js && SKIP_PROBES=1 node smoke_full_quiz.js && node smoke_hash.js"
+  },
+  "dependencies": {
+    "jsdom": "^24.0.0"
+  }
+}
