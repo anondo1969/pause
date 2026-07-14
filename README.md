@@ -207,7 +207,7 @@ There is no backend. The application transmits nothing, stores nothing server-si
       archivePrefix={arXiv},
       primaryClass={cs.HC},
 url={https://arxiv.org/abs/xxxx.xxxxx},
-doi={10.48550/arXiv.2407.10777},
+doi={10.48550/arXiv.xxxx.xxxxx},
 	    note={\href{https://doi.org/10.48550/arXiv.xxxx.xxxxx}{doi:10.48550/arXiv.xxxx.xxxxx}}
 }
 ```
