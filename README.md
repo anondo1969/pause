@@ -196,7 +196,7 @@ There is no backend. The application transmits nothing, stores nothing server-si
 - **Instrument items and scoring rubric:** CC-BY 4.0
 - **Manuscript:** CC-BY-SA 4.0
 
-## Citation
+## Citation: Coming Soon...
 
 ```bibtex
 @misc{alam2026pause,
