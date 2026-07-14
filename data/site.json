@@ -49,9 +49,9 @@
     "rightHtml": "cc-by 4.0 instrument &nbsp;&middot;&nbsp; mit code &nbsp;&middot;&nbsp; <a href=\"https://github.com/anondo1969/pause\" target=\"_blank\" rel=\"noopener\">github</a>",
     "quiet": "A self-reflection tool. Not a diagnostic. · instrument v0.1-alpha",
     "citation": {
-      "summary": "Cite this tool",
+      "summary": "Cite this tool: Coming Soon...",
       "textHtml": "Mahbub Ul Alam (Anondo) (2026). <em>PAUSE: A Privacy-Preserving Self-Reflection Tool for AI-Associated Cognitive Offloading.</em> arXiv:xxxx.xxxxx [cs.HC]. <a href=\"https://doi.org/10.48550/arXiv.xxxx.xxxxx\">doi:10.48550/arXiv.xxxx.xxxxx</a>",
-      "bibtexSummary": "BibTeX",
+      "bibtexSummary": "BibTeX : Coming Soon...",
       "bibtex": "@misc{alam2026pause,\n      title={PAUSE: A Privacy-Preserving Self-Reflection Tool for AI-Associated Cognitive Offloading},\n      author={Mahbub Ul Alam},\n      year={2026},\n      eprint={xxxx.xxxxx},\n      archivePrefix={arXiv},\n      primaryClass={cs.HC},\n      url={https://arxiv.org/abs/xxxx.xxxxx},\n      doi={10.48550/arXiv.xxxx.xxxxx},\n      note={\\href{https://doi.org/10.48550/arXiv.xxxx.xxxxx}{doi:10.48550/arXiv.xxxx.xxxxx}}\n}"
     },
     "contactHtml": "Contact: <a href=\"mailto:mahbub.ul.alam.anondo@gmail.com\">mahbub.ul.alam.anondo@gmail.com</a> &nbsp;&middot;&nbsp; <a href=\"https://www.linkedin.com/in/anondo/\" target=\"_blank\" rel=\"noopener\">LinkedIn Profile</a>"
