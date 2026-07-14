@@ -110,7 +110,7 @@
         f.contactHtml
           ? el('div', { class: 'footer-row footer-quiet', html: f.contactHtml })
           : null,
-        el('details', { class: 'footer-citation', open: true },
+        el('details', { class: 'footer-citation', open: false },
           el('summary', { class: 'fc-summary' },
             el('span', { class: 'fc-plus' }, '+'), c.summary),
           el('div', { class: 'fc-body' },
