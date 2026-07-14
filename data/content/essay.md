@@ -84,7 +84,7 @@ AI is not going away, and I do not want it to. I want to use it well. The point 
 
 **Source code and full item list:** <https://github.com/anondo1969/pause> (MIT License)
 
-**Paper, with references for every study mentioned above:** <https://doi.org/10.48550/arXiv.xxxx.xxxxx>
+**Paper, with references for every study mentioned above: (preprint, arXiv version coming shortly):** <https://anondo1969.github.io/pause/pages/paper.html>
 
 
 What habit helps you keep AI as a scaffold rather than a substitute? Drop a comment or reach out directly.
