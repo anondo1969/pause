@@ -24,7 +24,7 @@ PAUSE has no back end. There is no server that receives your responses, no datab
 
 At the end of the self-check you are offered a short, opaque string called a *return token*. It encodes your four readings. You copy it and keep it yourself, in a notes app or a password manager. There is no copy on any server, because, again, there is no server.
 
-If you come back later and paste that token into the Compare page, the comparison is worked out in your browser from the token you pasted. Your history lives with you, in the strings you chose to keep, and nowhere else. If you lose a token, it is simply gone. There is no account to recover it from. That is the same fact that makes the tool private in the first place.
+If you come back later and paste that token into the [Compare Pattern](pages/compare.html) page, the comparison is worked out in your browser from the token you pasted. Your history lives with you, in the strings you chose to keep, and nowhere else. If you lose a token, it is simply gone. There is no account to recover it from. That is the same fact that makes the tool private in the first place.
 
 ## What the host can and cannot see
 
