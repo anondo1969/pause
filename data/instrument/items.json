@@ -456,7 +456,7 @@
           "type": "c7_aut",
           "reverse": false,
           "task": "You have 90 seconds. List as many genuinely different uses as you can for the object shown. Type one per line, no AI tools, no search.",
-          "explanation": "This is a standard Alternative Uses Task. It counts two things. One is how many distinct uses you came up with (fluency). The other is how varied they were across categories (flexibility). Your raw text stays in your browser. It is not sent to a server unless you choose to opt in at the end.",
+          "explanation": "This is a standard Alternative Uses Task. It counts two things. One is how many distinct uses you came up with (fluency). The other is how varied they were across categories (flexibility). Your raw text stays in your browser.",
           "reference": {
             "quote": "“The list of uses for common bricks that E gives in eight minutes is scored in two ways, for fluency by counting all relevant responses and for flexibility by counting the number of different categories of uses, or, alternatively, the number of times that E shifts category of use. [...] Another faithful marker test for DMC has been Unusual Uses, which was later renamed Alternate Uses... E is asked to state uses, other than the common one, which is stated, for objects such as a newspaper, an automobile tire, or a shoe.” — Guilford (1967), pp. 143, 145.",
             "citation": "Guilford, J. P. (1967). <i>The Nature of Human Intelligence</i>. McGraw-Hill. ISBN 978-0-07-025135-9."
