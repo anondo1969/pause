@@ -5,10 +5,10 @@
   },
 "banner": {
   "pip": "⏸",
-  "html": "<a href='index.html'> <strong>PAUSE</strong> &nbsp;&middot;&nbsp; Patterns of AI Use: Self-Examination</a>"
+  "html": "<strong>PAUSE</strong> &nbsp;&middot;&nbsp; Patterns of AI Use: Self-Examination"
 },
 "disclaimerBanner": {
-  "html": "<a href='index.html'>A self-reflection tool, not a validated instrument &nbsp;&middot;&nbsp; for reflection only, not for clinical, educational, or hiring decisions &nbsp;&middot;&nbsp; no data collected, runs entirely in your browser</a>"
+  "html": "A self-reflection tool, not a validated instrument &nbsp;&middot;&nbsp; for reflection only, not for clinical, educational, or hiring decisions &nbsp;&middot;&nbsp; no data collected, runs entirely in your browser"
 },
 "nav": {
     "brandHtml": "P<em>au</em>se",
