@@ -133,7 +133,7 @@
         "label": "Start the self-check →",
         "href": "pages/quiz.html"
       },
-      "fineHtml": "If you would rather read the design rationale first, see the <a href=\"pages/about.html\">PAUSE Explained</a> page, <a href=\"pages/essay.html\">Personal reflection</a> page,<a href=\"pages/privacy-explained.html\">Privacy, explained</a> page, or the <a href=\"pages/paper.html\">Academic Paper</a> page."
+      "fineHtml": "If you would rather read the design rationale first, see the <a href=\"pages/about.html\">PAUSE Explained</a> page, <a href=\"pages/essay.html\">Personal reflection</a> page, <a href=\"pages/privacy-explained.html\">Privacy, explained</a> page, or the <a href=\"pages/paper.html\">Academic Paper</a> page."
     }
   ]
 }
