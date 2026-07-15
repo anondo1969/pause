@@ -3,14 +3,14 @@
     "titlePrefix": "PAUSE - Patterns of AI Use: Self-Examination",
     "description": "A short, citation-grounded self-reflection tool for how AI tools may be shaping your habits of thought. Free, anonymous, no login. A reflection tool, not a validated instrument; all scoring runs in your browser; no data is collected."
   },
-  "banner": {
-    "pip": "⏸",
-    "html": "<strong>PAUSE</strong> &nbsp;&middot;&nbsp; Patterns of AI Use: Self-Examination"
-  },
-  "disclaimerBanner": {
-    "html": "A self-reflection tool, not a validated instrument &nbsp;&middot;&nbsp; for reflection only, not for clinical, educational, or hiring decisions &nbsp;&middot;&nbsp; no data collected, runs entirely in your browser"
-  },
-  "nav": {
+"banner": {
+  "pip": "⏸",
+  "html": "<a href='index.html' style='color:inherit;text-decoration:none;display:block'><strong>PAUSE</strong> &nbsp;&middot;&nbsp; Patterns of AI Use: Self-Examination</a>"
+},
+"disclaimerBanner": {
+  "html": "<a href='index.html' style='color:inherit;text-decoration:none;display:block'>A self-reflection tool, not a validated instrument &nbsp;&middot;&nbsp; for reflection only, not for clinical, educational, or hiring decisions &nbsp;&middot;&nbsp; no data collected, runs entirely in your browser</a>"
+},
+"nav": {
     "brandHtml": "P<em>au</em>se",
     "links": [
       {
