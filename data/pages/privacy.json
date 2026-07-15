@@ -52,7 +52,7 @@
       "heading": "The return token",
       "body": [
         {
-          "p": "At the end of the self-check we offer a short opaque code (your \"return token\") that encodes your readings in a string. You copy that string and save it yourself, in a notes app or a password manager. If you come back later and paste it in on the <a href=\"pages/compare.html\">Compare</a> page, the comparison happens in your browser. The token does not go through any server, and we do not store any copy of it."
+          "p": "At the end of the self-check we offer a short opaque code (your \"return token\") that encodes your readings in a string. You copy that string and save it yourself, in a notes app or a password manager. If you come back later and paste it in on the <a href=\"pages/compare.html\">Compare Pattern</a> page, the comparison happens in your browser. The token does not go through any server, and we do not store any copy of it."
         }
       ]
     },
