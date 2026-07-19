@@ -1,5 +1,6 @@
 {
   "titleSuffix": "Academic Paper",
+  "description": "The PAUSE manuscript: a privacy-preserving self-reflection tool for AI-associated cognitive offloading. Read the framework, the instrument design, the scoring rubric, and the full citations.",
   "bodyClass": "page-paper",
   "mainClass": "paper-wrap",
   "markdown": "data/content/paper.md",

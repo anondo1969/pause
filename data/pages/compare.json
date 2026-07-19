@@ -1,5 +1,6 @@
 {
   "titleSuffix": "Compare your pattern",
+  "description": "Compare your PAUSE results over time. Paste the return tokens you saved from earlier self-checks to see how your AI-associated offloading patterns have shifted. Decoded in your browser; nothing is stored.",
   "bodyClass": "page-compare",
   "mainClass": "content-page compare-page",
   "header": {

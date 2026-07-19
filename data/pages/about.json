@@ -1,5 +1,6 @@
 {
   "titleSuffix": "about",
+  "description": "What PAUSE is and why it works the way it does: a privacy-preserving self-reflection tool for AI-associated cognitive offloading, its four functional areas, and the reasoning behind its design.",
   "bodyClass": "page-about",
   "mainClass": "content-page",
   "header": {

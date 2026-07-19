@@ -33,6 +33,8 @@
 !/LICENSE
 !/LICENSE-CONTENT.md
 !/Dockerfile
+!/robots.txt
+!/sitemap.xml
 
 # pages/
 !/pages/quiz.html
@@ -102,3 +104,4 @@
 !/media/offloading-pattern-demo.png
 !/media/compare-demo.png
 !/media/compare-narrated-analysis.png
+!/media/og-image.png

@@ -1,7 +1,7 @@
 {
   "meta": {
     "titlePrefix": "PAUSE - Patterns of AI Use: Self-Examination",
-    "description": "A short, citation-grounded self-reflection tool for how AI tools may be shaping your habits of thought. Free, anonymous, no login. A reflection tool, not a validated instrument; all scoring runs in your browser; no data is collected."
+    "description": "A free, private self-check for AI-associated cognitive offloading. See how your AI use may be shaping your reasoning, creativity, research, and social habits. Runs entirely in your browser; collects no data. PAUSE is a self-reflection tool, not a validated psychological instrument. It presents no reliability or validity evidence, and all readings should be interpreted as descriptive self-reflection rather than psychological measurement. The application is privacy-preserving by design: scoring is deterministic and runs client-side, no personal data is required, nothing is transmitted or stored beyond the browser session, and no LLM is involved in production."
   },
 "banner": {
   "pip": "⏸",

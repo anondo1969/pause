@@ -1,5 +1,6 @@
 {
   "titleSuffix": "privacy, explained",
+  "description": "How PAUSE achieves privacy by construction: the client-side design, the return-token mechanism, and why a tool for reflecting on cognitive offloading collects no data at all.",
   "bodyClass": "page-privacy",
   "mainClass": "paper-wrap",
   "markdown": "data/content/privacy-explained.md",

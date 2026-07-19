@@ -1,5 +1,6 @@
 {
   "titleSuffix": "A personal note",
+  "description": "A personal reflection on why PAUSE exists: what heavy AI use quietly changes about how we verify, create, learn, and connect, and why a periodic pause is worth taking.",
   "bodyClass": "page-essay",
   "mainClass": "paper-wrap",
   "markdown": "data/content/essay.md",

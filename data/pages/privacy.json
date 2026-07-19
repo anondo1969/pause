@@ -1,5 +1,6 @@
 {
   "titleSuffix": "privacy",
+  "description": "The PAUSE privacy notice in plain language. No backend, no accounts, no tracking cookies, no analytics. Your answers stay in your browser and nothing is transmitted or stored.",
   "bodyClass": "page-privacy",
   "mainClass": "content-page",
   "header": {

@@ -1,5 +1,6 @@
 {
   "titleSuffix": "self-check",
+  "description": "The PAUSE self-check: a short, citation-grounded questionnaire on how AI may be shaping your reasoning, creativity, research, and social habits. Ten minutes, no login, runs entirely in your browser.",
   "bodyClass": "page-quiz",
   "strings": {
     "nav": {
