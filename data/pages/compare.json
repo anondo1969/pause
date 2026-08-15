@@ -45,6 +45,22 @@
       "strong": "Strong"
     },
     "bandSuffix": " offloading signal",
+    "bandKey": {
+      "label": "Band cut points · fixed quarters of the 0–100 scale",
+      "order": [
+        "minimal",
+        "mild",
+        "moderate",
+        "strong"
+      ],
+      "ranges": [
+        "0–24",
+        "25–49",
+        "50–74",
+        "75–100"
+      ],
+      "note": "The bands are descriptive, not normed. Darker means more self-reported offloading signal, not a worse result."
+    },
     "months": [
       "Jan",
       "Feb",

@@ -59,10 +59,37 @@
   --ink-faint: #6a6358;
   --ochre: #c17f3a;
   --ochre-light: #e0a86a;
+  --ochre-deep: #b06030;
   --clay: #a04020;
   --sage: #4a7c59;
   --sage-light: #6a9c79;
   --rule: #cfcabb;
+
+  /* Band scale. One hue, four steps, monotonically darker as the
+     reading rises (L* 72.8 / 58.8 / 49.3 / 40.0). The ordering
+     survives greyscale, colour-blind vision, and printing, which a
+     green-to-red ramp does not: sage and clay differ by a contrast
+     ratio of only 1.33. Sequential rather than diverging is also the
+     honest encoding here, since the bands describe how much
+     offloading signal is present, not how well the respondent did. */
+  --band-1: var(--ochre-light);
+  --band-2: var(--ochre);
+  --band-3: var(--ochre-deep);
+  --band-4: var(--clay);
+
+  /* Quarter dividers at the 25/50/75 cut points. Two sets at the same
+     positions: the dark set is painted on the track and shows through
+     wherever the fill has not reached, the light set is painted on the
+     fill itself. Between them a divider stays visible at every score
+     and against every band colour. */
+  --band-ticks-dark:
+    linear-gradient(rgba(42, 42, 40, 0.3), rgba(42, 42, 40, 0.3)),
+    linear-gradient(rgba(42, 42, 40, 0.3), rgba(42, 42, 40, 0.3)),
+    linear-gradient(rgba(42, 42, 40, 0.3), rgba(42, 42, 40, 0.3));
+  --band-ticks-light:
+    linear-gradient(rgba(240, 236, 221, 0.85), rgba(240, 236, 221, 0.85)),
+    linear-gradient(rgba(240, 236, 221, 0.85), rgba(240, 236, 221, 0.85)),
+    linear-gradient(rgba(240, 236, 221, 0.85), rgba(240, 236, 221, 0.85));
   --serif: 'Fraunces', 'Iowan Old Style', Georgia, serif;
   --mono: 'JetBrains Mono', 'Menlo', ui-monospace, monospace;
 
@@ -1237,6 +1264,13 @@ blockquote.quote::before {
   letter-spacing: 0.14em;
   color: var(--ink);
 }
+.dim-band-range {
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  color: var(--ink-faint);
+}
 .pilot-badge {
   display: inline-flex;
   align-items: center;
@@ -1250,16 +1284,90 @@ blockquote.quote::before {
 }
 .pilot-badge::before { content: "●"; font-size: 10px; }
 
-.dim-bar-track {
-  height: 14px;
-  background: var(--paper-deep);
+/* Banded gauge, shared by the result page and the Compare delta
+   cards. The fill always spans the full track and is revealed by
+   clip-path rather than sized by width, so the tick positions inside
+   it stay anchored to the 0-100 scale instead of to the score. The
+   previous rule painted the ramp on a width-sized fill, which meant
+   every bar rendered the whole sage-ochre-clay ramp compressed into
+   its own length: a reading of 18 ended in clay exactly as a reading
+   of 89 did, and the colour carried no information at all. */
+.dim-bar-track,
+.compare-delta-track {
   position: relative;
+  overflow: hidden;
+  background-color: var(--paper-deep);
+  background-image: var(--band-ticks-dark);
+  background-size: 1px 100%;
+  background-position: 25% 0, 50% 0, 75% 0;
+  background-repeat: no-repeat;
   border: 1px solid var(--rule);
 }
-.dim-bar-fill {
-  height: 100%;
-  background: linear-gradient(90deg, var(--sage) 0%, var(--ochre) 60%, var(--clay) 100%);
-  transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+.dim-bar-fill,
+.compare-delta-fill {
+  position: absolute;
+  inset: 0;
+  background-color: var(--rule);
+  background-image: var(--band-ticks-light);
+  background-size: 1px 100%;
+  background-position: 25% 0, 50% 0, 75% 0;
+  background-repeat: no-repeat;
+  transition: clip-path 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.dim-bar-track { height: 14px; }
+.compare-delta-track { height: 10px; margin-top: 10px; }
+
+.is-band-1 { background-color: var(--band-1); }
+.is-band-2 { background-color: var(--band-2); }
+.is-band-3 { background-color: var(--band-3); }
+.is-band-4 { background-color: var(--band-4); }
+
+/* Band key: the cut points, stated once above the readings. */
+.band-key {
+  margin: 0 0 34px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--rule);
+}
+.band-key-label {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--ink-faint);
+  margin-bottom: 10px;
+}
+.band-key-scale {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+}
+.band-key-swatch {
+  height: 10px;
+  border: 1px solid var(--rule);
+  border-bottom: none;
+}
+.band-key-name {
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--ink);
+  margin-top: 7px;
+}
+.band-key-range {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--ink-faint);
+  margin-top: 2px;
+}
+.band-key-note {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  line-height: 1.6;
+  color: var(--ink-faint);
+  margin-top: 14px;
 }
 .dim-value {
   font-family: var(--mono);
@@ -1730,9 +1838,14 @@ blockquote.quote::before {
   font-family: var(--mono);
   font-size: 10px;
   color: var(--ink-faint);
-  margin-top: 4px;
+  margin-top: 8px;
   text-transform: uppercase;
   letter-spacing: 0.06em;
+}
+.compare-delta-range {
+  margin-left: 6px;
+  color: var(--ink-faint);
+  opacity: 0.85;
 }
 
 /* Analysis */

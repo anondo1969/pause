@@ -86,6 +86,22 @@
     "result": {
       "headerHtml": "Your AI <em>offloading patterns</em>.",
       "bannerHtml": "<span class=\"pip\">●</span> A self-reflection tool · descriptive · not a measurement · not a diagnostic",
+      "bandKey": {
+        "label": "Band cut points · fixed quarters of the 0–100 scale",
+        "names": [
+          "Minimal",
+          "Mild",
+          "Moderate",
+          "Strong"
+        ],
+        "ranges": [
+          "0–24",
+          "25–49",
+          "50–74",
+          "75–100"
+        ],
+        "note": "The bands are descriptive, not normed. Darker means more self-reported offloading signal, not a worse result."
+      },
       "limitedBasisBand": "Limited basis",
       "limitedBasisTag": "too few applicable answers for a reading",
       "naTag": "based on answered items · {n} marked N/A",

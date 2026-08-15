@@ -46,11 +46,16 @@
     return STR.months[dt.getUTCMonth()] + ' \u2019' + String(dt.getUTCFullYear()).slice(2);
   }
 
+  /** 1..4, matching the cut points in scoring.js#bandFor. */
+  function bandIndex(score) {
+    if (score <= 24) return 1;
+    if (score <= 49) return 2;
+    if (score <= 74) return 3;
+    return 4;
+  }
+
   function bandLabel(score) {
-    if (score <= 24) return STR.bands.minimal;
-    if (score <= 49) return STR.bands.mild;
-    if (score <= 74) return STR.bands.moderate;
-    return STR.bands.strong;
+    return STR.bands[STR.bandKey.order[bandIndex(score) - 1]];
   }
 
   function svgEl(tag, attrs) {
@@ -62,6 +67,27 @@
   // -------------------------------------------------------
   // Page scaffold (built once from strings, into #page-main)
   // -------------------------------------------------------
+
+  /**
+   * The band key, mirroring the one on the result page: the four cut
+   * points stated once, so the band label under each delta card has
+   * something to refer to. Band names come from STR.bands, in the
+   * order given by STR.bandKey.order, so they are defined once.
+   */
+  function buildBandKey() {
+    const K = STR.bandKey;
+    const scale = el('div', { class: 'band-key-scale' });
+    K.order.forEach((key, i) => {
+      scale.appendChild(el('div', { class: 'band-key-cell' },
+        el('div', { class: 'band-key-swatch is-band-' + (i + 1) }),
+        el('div', { class: 'band-key-name' }, STR.bands[key]),
+        el('div', { class: 'band-key-range' }, K.ranges[i])));
+    });
+    return el('div', { class: 'band-key' },
+      el('div', { class: 'band-key-label' }, K.label),
+      scale,
+      el('div', { class: 'band-key-note' }, K.note));
+  }
 
   function buildScaffold() {
     const main = document.getElementById('page-main');
@@ -83,6 +109,7 @@
         el('div', { class: 'compare-chart-legend', id: 'chart-legend' }),
         svgEl('svg', { id: 'chart-svg', class: 'compare-chart-svg', role: 'img', 'aria-label': STR.chartAria }),
         el('div', { class: 'compare-chart-tooltip', id: 'chart-tooltip', hidden: true })),
+      buildBandKey(),
       el('div', { class: 'compare-deltas', id: 'deltas' }),
       el('div', { class: 'compare-analysis', id: 'analysis' })));
   }
@@ -251,6 +278,10 @@
   // -------------------------------------------------------
 
   function deltaCard(dim, value, deltaEl) {
+    // Same banded gauge as the result page, so a bare number like 41
+    // is placed on the 0-100 scale instead of being left to compare
+    // against three other bare numbers.
+    const i = bandIndex(value);
     return el('div', { class: 'compare-delta-card' },
       el('div', { class: 'compare-delta-dim' },
         el('span', { class: 'compare-delta-swatch dim-bg-' + dim.cls }),
@@ -258,7 +289,14 @@
       el('div', { class: 'compare-delta-row' },
         el('span', { class: 'compare-delta-score' }, Math.round(value)),
         deltaEl),
-      el('div', { class: 'compare-delta-band' }, bandLabel(value) + STR.bandSuffix));
+      el('div', { class: 'compare-delta-track' },
+        el('div', {
+          class: 'compare-delta-fill is-band-' + i,
+          style: 'clip-path: inset(0 ' + (100 - Math.round(value)) + '% 0 0);'
+        })),
+      el('div', { class: 'compare-delta-band' },
+        bandLabel(value) + STR.bandSuffix,
+        el('span', { class: 'compare-delta-range' }, STR.bandKey.ranges[i - 1])));
   }
 
   function renderDeltas(sessions) {

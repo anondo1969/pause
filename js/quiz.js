@@ -660,6 +660,26 @@
     return fmt(R.summaries.strong, { role: roleNote });
   }
 
+  /**
+   * The band key: the four cut points from the paper's Section 3.3,
+   * stated once above the readings. Without it a reading of 82 is
+   * labelled "strong offloading signal" with nothing on the page
+   * saying where strong begins.
+   */
+  function buildBandKey(K) {
+    const scale = el('div', { class: 'band-key-scale' });
+    K.names.forEach((name, i) => {
+      scale.appendChild(el('div', { class: 'band-key-cell' },
+        el('div', { class: 'band-key-swatch is-band-' + (i + 1) }),
+        el('div', { class: 'band-key-name' }, name),
+        el('div', { class: 'band-key-range' }, K.ranges[i])));
+    });
+    return el('div', { class: 'band-key' },
+      el('div', { class: 'band-key-label' }, K.label),
+      scale,
+      el('div', { class: 'band-key-note' }, K.note));
+  }
+
   function renderResult() {
     const R = UI.result;
     const dimScores = computeDimensionScores();
@@ -672,6 +692,9 @@
     root.appendChild(el('h1', { class: 'result-header', html: R.headerHtml }));
     root.appendChild(el('div', { class: 'result-banner', html: R.bannerHtml }));
 
+    // ------ band key ------
+    root.appendChild(buildBandKey(R.bandKey));
+
     // ------ dimension bars + per-dimension feedback ------
     const dimsWrap = el('div', { class: 'dimensions' });
     ITEMS.dimensions.forEach(dim => {
@@ -683,12 +706,20 @@
         el('div', { class: 'dim-name' }, dim.name),
         el('div', { class: 'dim-band' },
           band ? band.label : R.limitedBasisBand,
+          band ? el('span', { class: 'dim-band-range' }, R.bandKey.ranges[band.band - 1]) : null,
           el('span', { class: 'dim-value' }, score.score !== null ? score.score : '\u2014'))));
 
-      // The bar width is data (the score itself), so it stays a
-      // per-element style; the bar's look lives in CSS.
+      // The reveal is data (the score itself), so it stays a
+      // per-element style; the bar's look lives in CSS. The fill spans
+      // the whole track and is clipped from the right rather than
+      // sized by width, which keeps the quarter dividers inside it
+      // anchored to the 0-100 scale. The band class carries the
+      // colour, so colour names the band instead of decorating the bar.
       row.appendChild(el('div', { class: 'dim-bar-track' },
-        el('div', { class: 'dim-bar-fill', style: 'width: ' + (score.score !== null ? score.score : 0) + '%;' })));
+        el('div', {
+          class: 'dim-bar-fill' + (band ? ' is-band-' + band.band : ''),
+          style: 'clip-path: inset(0 ' + (100 - (score.score !== null ? score.score : 0)) + '% 0 0);'
+        })));
 
       if (score.limited_basis) {
         row.appendChild(el('span', { class: 'dim-tag' }, R.limitedBasisTag));
