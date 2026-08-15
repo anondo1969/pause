@@ -52,7 +52,7 @@
       "summary": "Cite this tool:",
       "textHtml": "Mahbub Ul Alam (Anondo) (2026). <em>PAUSE: A Privacy-Preserving Self-Reflection Tool for AI-Associated Cognitive Offloading.</em> [Preprint]. SSRN. <a href=\"https://doi.org/10.2139/ssrn.7270039">doi:10.2139/ssrn.7270039</a>",
       "bibtexSummary": "BibTeX:",
-      "bibtex": "@misc{alam2026pause,\n      title={PAUSE: A Privacy-Preserving Self-Reflection Tool for AI-Associated Cognitive Offloading},\n      author={Mahbub Ul Alam},\n      year={2026},\n      month=jul,\n      howpublished={SSRN Preprint},\n      url={https://ssrn.com/abstract=7270039},\n      doi={10.2139/ssrn.7270039},\n      note={\url{https://doi.org/10.2139/ssrn.7270039}}\n}"
+      "bibtex": "@misc{alam2026pause,\n      title={PAUSE: A Privacy-Preserving Self-Reflection Tool for AI-Associated Cognitive Offloading},\n      author={Mahbub Ul Alam},\n      year={2026},\n      month=jul,\n      howpublished={SSRN Preprint},\n      url={https://ssrn.com/abstract=7270039},\n      doi={10.2139/ssrn.7270039},\n      note={\\href{https://doi.org/10.48550/arXiv.xxxx.xxxxx}{doi:10.48550/arXiv.xxxx.xxxxx}}\n}"
     },
     "contactHtml": "Contact: <a href=\"mailto:mahbub.ul.alam.anondo@gmail.com\">mahbub.ul.alam.anondo@gmail.com</a> &nbsp;&middot;&nbsp; <a href=\"https://www.linkedin.com/in/anondo/\" target=\"_blank\" rel=\"noopener\">LinkedIn Profile</a>"
   },
