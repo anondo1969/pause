@@ -194,7 +194,7 @@ There is no backend. The application transmits nothing, stores nothing server-si
 
 - **Code:** MIT
 - **Instrument items and scoring rubric:** CC-BY 4.0
-- **Manuscript:** CC-BY-SA 4.0
+- **Manuscript:** CC BY-NC 4.0
 
 ## Citation:
 
