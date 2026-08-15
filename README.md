@@ -196,19 +196,23 @@ There is no backend. The application transmits nothing, stores nothing server-si
 - **Instrument items and scoring rubric:** CC-BY 4.0
 - **Manuscript:** CC-BY-SA 4.0
 
-## Citation: Coming Soon...
+## Citation:
+
+Please acknowledge the following work in papers or derivative software:
+
+Alam, Mahbub Ul (2026). PAUSE: A privacy-preserving self-reflection tool for AI-associated cognitive offloading [Preprint]. SSRN. [https://doi.org/10.2139/ssrn.7270039](https://doi.org/10.2139/ssrn.7270039)
 
 ```bibtex
 @misc{alam2026pause,
-      title={PAUSE: A Privacy-Preserving Self-Reflection Tool for AI-Associated Cognitive Offloading}, 
-      author={Mahbub Ul Alam},
-      year={2026},
-      eprint={xxxx.xxxxx},
-      archivePrefix={arXiv},
-      primaryClass={cs.HC},
-url={https://arxiv.org/abs/xxxx.xxxxx},
-doi={10.48550/arXiv.xxxx.xxxxx},
-	    note={\href{https://doi.org/10.48550/arXiv.xxxx.xxxxx}{doi:10.48550/arXiv.xxxx.xxxxx}}
+  author       = {Alam, Mahbub Ul},
+  title        = {{PAUSE}: A Privacy-preserving Self-reflection Tool for
+                  {AI}-associated Cognitive Offloading},
+  year         = {2026},
+  month        = jul,
+  howpublished = {SSRN Preprint},
+  doi          = {10.2139/ssrn.7270039},
+  url          = {https://ssrn.com/abstract=7270039},
+  note         = {\url{https://doi.org/10.2139/ssrn.7270039}}
 }
 ```
 
