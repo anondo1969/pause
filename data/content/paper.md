@@ -6,6 +6,10 @@ SciLifeLab Data Centre, Uppsala University, Sweden\
 
 **PAUSE** (**P**atterns of **A**I **U**se: **S**elf-**E**xamination) is a public self-reflection tool for AI usage patterns.
 
+**SSRN preprint:** <https://doi.org/10.2139/ssrn.7270039>
+
+**Uppsala University DiVA preprint:** <https://urn.kb.se/resolve?urn=urn%3Anbn%3Ase%3Auu%3Adiva-595228>
+
 **Live tool:** <https://anondo1969.github.io/pause>
 
 **Source code:** <https://github.com/anondo1969/pause>
