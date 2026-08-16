@@ -90,7 +90,7 @@
         {
           "ul": {
             "items": [
-              "<a href=\"pages/paper.html\">The paper</a>: the manuscript and source live in the repository.",
+              "<a href=\"https://doi.org/10.2139/ssrn.7270039\" target=\"_blank\" rel=\"noopener\">The paper (SSRN Preprint)</a>: the manuscript and source live in the repository as well.",
               "<a href=\"pages/privacy.html\">Privacy notice</a> in plain language.",
               "Source code on <a href=\"https://github.com/anondo1969/pause\" target=\"_blank\" rel=\"noopener\">GitHub</a>."
             ]
