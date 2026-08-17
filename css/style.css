@@ -59,23 +59,31 @@
   --ink-faint: #6a6358;
   --ochre: #c17f3a;
   --ochre-light: #e0a86a;
-  --ochre-deep: #b06030;
+  --ochre-deep: #a85528;
   --clay: #a04020;
+  --clay-deep: #7a3115;
   --sage: #4a7c59;
   --sage-light: #6a9c79;
   --rule: #cfcabb;
 
   /* Band scale. One hue, four steps, monotonically darker as the
-     reading rises (L* 72.8 / 58.8 / 49.3 / 40.0). The ordering
+     reading rises (L* 72.8 / 58.8 / 45.6 / 30.4). The ordering
      survives greyscale, colour-blind vision, and printing, which a
      green-to-red ramp does not: sage and clay differ by a contrast
      ratio of only 1.33. Sequential rather than diverging is also the
      honest encoding here, since the bands describe how much
-     offloading signal is present, not how well the respondent did. */
+     offloading signal is present, not how well the respondent did.
+
+     The steps are deliberately even (adjacent contrast 1.57 / 1.59 /
+     1.75). An earlier version ran ochre-light / ochre / #b06030 /
+     clay, which crowded the top of the scale: moderate and strong sat
+     only 1.40 apart and read as one colour at bar height. Band 4 uses
+     its own --clay-deep rather than --clay, because --clay is the
+     site's link and heading accent and must not move with the scale. */
   --band-1: var(--ochre-light);
   --band-2: var(--ochre);
   --band-3: var(--ochre-deep);
-  --band-4: var(--clay);
+  --band-4: var(--clay-deep);
 
   /* Quarter dividers at the 25/50/75 cut points. Two sets at the same
      positions: the dark set is painted on the track and shows through
