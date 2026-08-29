@@ -33,6 +33,10 @@
 !/LICENSE
 !/LICENSE-CONTENT.md
 !/Dockerfile
+!/.dockerignore
+!/nginx.conf
+!/start-script.sh
+!/SERVE.md
 !/robots.txt
 !/sitemap.xml
 !/google0140e309dfcde47b.html
@@ -95,9 +99,6 @@
 !/data/instrument/feedback.json
 
 # media/  (README + paper images)
-#   Strict: exactly these four. If you rename/add a figure, add its line here.
-#   Prefer figures to "just work" without editing this file? Replace the four
-#   lines below with:  !/media/*.png   !/media/*.svg   !/media/*.pdf
 !/media/figure1-theoretical-framework.png
 !/media/item-b5-anatomy.png
 !/media/compare-chart.png
