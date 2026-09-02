@@ -124,6 +124,37 @@ Because all texts are data, common edits never touch code:
 - **Change the banner, navigation, footer, or citation** → edit `data/site.json` (applies to every page at once).
 - **Change colors, spacing, or typography** → edit `css/style.css`.
 
+## Docker Instructions
+
+### 1. Pull
+
+```bash
+docker pull mahbub1969/pause:latest
+```
+
+### 2. Run
+
+```bash
+docker run --rm -p 8080:8080 mahbub1969/pause:latest
+```
+
+Open: `http://localhost:8080`
+
+### 3. Build Locally with Buildx
+
+```bash
+docker buildx build \
+  -t <namespace>/pause:<tag> \
+  --load \
+  .
+```
+
+### 4. Push
+
+```bash
+docker push <namespace>/pause:<tag>
+```
+
 ## Run it locally
 
 The pages load their data with `fetch()`, which browsers block on `file://` URLs. Serve the folder with any static server:
