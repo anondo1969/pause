@@ -124,7 +124,7 @@ Because all texts are data, common edits never touch code:
 - **Change the banner, navigation, footer, or citation** → edit `data/site.json` (applies to every page at once).
 - **Change colors, spacing, or typography** → edit `css/style.css`.
 
-## Docker Instructions
+## [Docker Instructions](https://hub.docker.com/repository/docker/mahbub1969/pause)
 
 ### 1. Pull
 
